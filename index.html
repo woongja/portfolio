@@ -305,13 +305,62 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 .svc-shot{padding:10px}
 .svc-shot img{max-height:26vh;width:100%}
 .svc-shot figcaption{margin-top:4px}
+.tiles.vert{grid-template-columns:1fr}
+.tiles.vert .tile{flex-direction:row;align-items:baseline;gap:14px;padding:16px 18px}
+.tiles.vert .tile b{min-width:110px}
+.split.dna-res{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr)}
+.split.dna-res .bars{grid-template-columns:1fr;gap:26px;padding:30px 32px}
+.split.dna-res .bars h4{font-size:16px;margin-bottom:14px}
+.split.dna-res .bar{font-size:15px;margin-bottom:14px;grid-template-columns:84px minmax(0,1fr) 56px}
+.split.dna-res .bar .track{height:20px}
+.split.dna-res .tiles.vert .tile{padding:22px 20px}
+.split.dna-res .tiles.vert .tile b{font-size:34px}
+.repos.mini{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px;width:100%}
+.repos.mini .repo{padding:14px 16px;gap:6px}
+.repos.mini .repo p{font-size:13px}
+.contact .repos .chip{font-size:11px}
+.par3.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.intro-small{margin-top:16px;padding:10px}
+.intro-small img{max-height:21vh}
+.bars.one{grid-template-columns:1fr}
+.bars.one{padding:14px 18px}
+.bars.one .bar{grid-template-columns:110px minmax(0,1fr) 52px;margin-bottom:5px}
+.bars.one .note{font-size:12px}
+#p-flex-result .col:last-child .panel img{max-height:25vh}
+#p-flex-result .col:last-child .panel{padding:12px}
+.note-p{font-size:14px;color:var(--muted);line-height:1.6}
+.split.dna-res .tiles.vert .tile b{font-size:26px;min-width:160px;white-space:nowrap}
+#p-safe-result .tile{flex-direction:column;align-items:flex-start;gap:4px}
+.split.pa{grid-template-columns:1fr 1fr;gap:32px}
+.split.pa .col{gap:14px}
+.split.pa .pdl>div{border-top:none;padding-top:0}
+.split.pa .pdl>div:last-child{border-bottom:1px solid var(--line);padding-bottom:14px}
+.split.pa .panel img{max-height:40vh;width:100%}
+.head-links{margin-top:12px}
+.result-line{margin-top:18px}
+.result-line>div{grid-template-columns:96px minmax(0,1fr)}
+.split.figs{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:start}
+.split.figs .col{gap:14px}
+.split.figs .panel{padding:10px}
+.split.figs .panel img{max-height:22vh;width:100%}
+#p-dna .split.figs .panel img{max-height:18vh}
+.split.figs .panel figcaption{font-size:12px}
+#p-dna .head-links{margin-top:6px}
+.split.figs .panel figcaption{margin-top:6px}
+.result-line{margin-top:0;margin-bottom:18px}
+.figrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:stretch}
+.figrow .panel{padding:12px;display:flex;flex-direction:column;justify-content:center}
+.figrow .panel img{max-height:34vh;width:100%}
+.figrow .panel figcaption{margin-top:8px;font-size:12px}
+#p-dna .figrow,#p-dna .par3.two{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.figrow+.par3.two{gap:20px}
 </style>
 </head>
 <body>
 <nav aria-label="섹션 이동" class="nav">
 <div class="wrap">
 <a class="brand" href="#home">woongjae<span>.</span>lee</a>
-<ul><li><a class="link" href="#home">Home</a></li><li><a class="link" href="#about">About</a></li><li><a class="link" href="#p-dna">Projects</a></li><li><a class="link" href="#publications">Publications</a></li><li><a class="link" href="#github">GitHub</a></li><li><a class="link" href="#awards">Awards</a></li><li><a class="link" href="#contact">Contact</a></li></ul>
+<ul><li><a class="link" href="#home">Home</a></li><li><a class="link" href="#about">About</a></li><li><a class="link" href="#p-dna">Projects</a></li><li><a class="link" href="#publications">Publications</a></li><li><a class="link" href="#awards">Awards</a></li><li><a class="link" href="#contact">Contact</a></li></ul>
 </div>
 </nav>
 <main aria-label="포트폴리오 슬라이드" class="deck" id="deck">
@@ -384,12 +433,15 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
     <div class="pmeta"><p class="eyebrow">Project 01 / 06 · Research</p><span class="chip hl">ICASSP 2026 · 제1저자 · Oral</span><span class="chip">석사 연구</span><span class="chip">국내·미국 특허</span></div>
     <h2>DNA Multi-LoRA <span class="psub">노이즈 인지 기반 동적 어댑터 적응 방법론</span></h2>
     <p class="summary">입력 음성의 잡음 유형을 먼저 분류하고, 그 잡음에 맞게 학습한 LoRA 어댑터만 동결된 탐지 모델에 붙여 실환경에서도 탐지 성능을 유지합니다.</p>
+    <div class="links head-links"><a class="btn primary" href="https://ieeexplore.ieee.org/abstract/document/11463424" target="_blank" rel="noopener">논문 (IEEE Xplore)</a><a class="btn" href="https://github.com/woongja/DNA-Multi-LoRA" target="_blank" rel="noopener">GitHub 코드</a></div>
   </header>
-  <figure class="panel wide"><img src="img/arch.png" alt="DNA Multi-LoRA 구조도: 입력 음성 → 잡음 분류 → Router가 LoRA 선택 → SSL feature extractor와 Backend에 적용된 탐지 모델 → Real/Fake와 Noise Type 출력"><figcaption>구조 · 잡음 분류 → 어댑터 선택 → 진위 판별</figcaption></figure>
-  <div class="par3">
+  <div class="figrow">
+    <figure class="panel"><img src="img/heatmap.jpg" alt="ASVspoof 2019와 MLAAD에서 6개 탐지 모델의 잡음·변형 조건별 정확도 히트맵"><figcaption>잡음·변형 조건별 탐지 정확도 · 대부분의 조건에서 크게 저하</figcaption></figure>
+    <figure class="panel"><img src="img/arch.png" alt="DNA Multi-LoRA 구조도: 입력 음성 → 잡음 분류 → Router가 LoRA 선택 → 동결된 탐지 모델 → Real/Fake와 Noise Type 출력"><figcaption>구조 · 잡음 분류 → 어댑터 선택 → 진위 판별</figcaption></figure>
+  </div>
+  <div class="par3 two">
     <div><h4>Problem</h4><p>배경 소음·잔향·압축 같은 실환경 조건에서 탐지 성능이 크게 떨어집니다. 새 조건에 맞춰 다시 학습하면 기존 성능을 잊고, 환경마다 모델을 두면 비용이 커집니다.</p></div>
     <div><h4>Approach</h4><p>Spectrogram·MFCC·F0를 융합한 CNN-BiLSTM으로 9가지 잡음 유형을 분류하고, 해당 잡음 도메인의 LoRA 어댑터를 골라 탐지 모델에 적용합니다.</p></div>
-    <div><h4>Result</h4><p>평균 EER 31.6% 상대 감소, 학습 파라미터는 Full Fine-tuning의 약 1/10. 석사학위논문과 국내·미국 특허로 이어졌습니다.</p></div>
   </div>
 </div></section>
 
@@ -398,15 +450,14 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
     <div class="pmeta"><p class="eyebrow">Project 01 / 06 · Result</p></div>
     <h2>DNA Multi-LoRA <span class="psub">실험 결과</span></h2>
   </header>
-  <div class="split">
+  <dl class="pdl result-line"><div><dt>Result</dt><dd>약 1/10의 학습 파라미터로 두 백본 모두 Full Fine-tuning보다 낮은 EER을 기록했고, 평균 EER을 31.6% 상대 감소했습니다. 이 결과는 석사학위논문과 국내·미국 특허로 이어졌습니다.</dd></div></dl>
+  <div class="split dna-res">
     <div class="col">
-      <div class="tiles">
+      <div class="tiles vert">
         <div class="tile hl"><b>31.6%</b><span>평균 EER 상대 감소</span></div>
         <div class="tile"><b>1/10</b><span>학습 파라미터 · 26.7M vs 317.8M</span></div>
-        <div class="tile"><b>95%</b><span>잡음 분류기 외부 데이터 정확도</span></div>
+        <div class="tile"><b>95%</b><span>잡음 분류 정확도</span></div>
       </div>
-      <p class="stack"><b>Stack</b> · PyTorch · wav2vec 2.0 (XLSR) · LoRA · CNN-BiLSTM · ASVspoof 2019/2021 · In-the-Wild</p>
-      <div class="links"><a class="btn primary" href="https://ieeexplore.ieee.org/abstract/document/11463424" target="_blank" rel="noopener">논문 (IEEE Xplore)</a><a class="btn" href="https://github.com/woongja/DNA-Multi-LoRA" target="_blank" rel="noopener">GitHub 코드</a><a class="btn" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=ko&amp;user=IYl2mi0AAAAJ&amp;citation_for_view=IYl2mi0AAAAJ:9yKSN-GCB0IC" target="_blank" rel="noopener">Google Scholar</a></div>
     </div>
     <div class="col">
       <div class="bars" role="img" aria-label="Pooled EER 비교. AASIST-SSL: Baseline 21.39, Full FT 8.13, Ours 7.93. Conformer+TCM: Baseline 20.23, Full FT 8.14, Ours 7.55">
@@ -420,7 +471,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
           <div class="bar"><span class="lbl">Full FT</span><span class="track"><span class="fill" style="display:block;width:38.1%"></span></span><span class="v">8.14</span></div>
           <div class="bar ours"><span class="lbl">Ours</span><span class="track"><span class="fill" style="display:block;width:35.3%"></span></span><span class="v">7.55</span></div>
         </div>
-        <p class="note">낮을수록 좋습니다. 약 1/10의 학습 파라미터로 두 백본 모두 Full Fine-tuning보다 낮은 EER을 기록했습니다.</p>
       </div>
     </div>
   </div>
@@ -435,11 +485,10 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
   <div class="split center">
     <div class="col">
       <dl class="pdl">
-        <div><dt>Problem</dt><dd>탐지 모델은 음성 전체에 대해 Real/Fake만 알려 줄 뿐, 어느 구간을 근거로 판단했는지 설명하지 못합니다.</dd></div>
-        <div><dt>Approach</dt><dd>동결된 탐지 모델의 프레임 임베딩으로 클래스별 프로토타입(k-means)을 만들고, 예측 클래스 프로토타입과의 거리를 0~1 정렬 점수로 바꿉니다.</dd></div>
-        <div><dt>Result</dt><dd>재학습·역전파 없이 설명 1건당 27.1 ms, SNR 10–30 dB 잡음에서도 중요도 순위가 안정적입니다.</dd></div>
+        <div><dt>Problem</dt><dd>탐지 모델은 Real/Fake만 알려 줄 뿐, 판단 근거가 된 구간을 설명하지 못합니다.</dd></div>
+        <div><dt>Key Finding</dt><dd>발화 단위로만 학습한 모델이어도, 프레임 단위 표현이 Real/Fake 클래스별로 구분됩니다.</dd></div>
+        <div><dt>Approach</dt><dd>그래서 각 프레임이 예측 클래스 프로토타입에 가까울수록 중요한 프레임으로 점수를 매기는 FLEX를 제안했습니다.</dd></div>
       </dl>
-      <p class="stack"><b>Stack</b> · XLSR (wav2vec 2.0) · SSL-AASIST · SSL-Conformer+TCM · ASVspoof 2019 · In-the-Wild</p>
       <div class="links"><a class="btn" href="https://github.com/woongja/FLEX-Frame-Level-Explanations-for-Audio-Deepfake-Detection" target="_blank" rel="noopener">GitHub 코드</a></div>
     </div>
     <figure class="panel col"><img src="img/flex_arch.jpg" alt="FLEX 구조: 1단계 학습 음성으로 클래스별 프로토타입 구성, 2단계 테스트 음성의 프레임 표현과 예측 클래스 프로토타입 간 거리로 프레임 중요도 계산"></figure>
@@ -453,17 +502,9 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
   </header>
   <div class="split">
     <div class="col">
-      <figure class="panel"><img src="img/flex_example.jpg" alt="부분 위조 음성에 대한 FLEX 결과: 진짜 음성 구간에서 정렬 점수가 높고 위조 구간에서 낮음"><figcaption>예시 · 부분 위조 음성에서 진짜 음성 구간에 높은 점수가 집중</figcaption></figure>
-      <ul class="takeaways">
-        <li>중요 프레임 30%를 가리면 EER 7.85% → 최대 37.71%</li>
-        <li>덜 중요한 프레임을 가리면 9% 안팎 유지</li>
-        <li>프로토타입 개수(K 2~32)와 무관하게 일관된 결과</li>
-      </ul>
-    </div>
-    <div class="col">
       <div class="tbl-wrap">
-        <h4>프로토타입 개수(K)별 마스킹 실험 · EER (%)</h4>
-        <p class="cap">마스킹 전 EER 7.85%. Pos는 중요 프레임부터, Neg는 덜 중요한 프레임부터 가린 결과입니다. Pos는 크게 오르고(↑) Neg는 유지(↓)될수록 중요한 부분을 더 잘 식별합니다.</p>
+        <h4>마스킹 실험 EER (%)</h4>
+        <p class="cap">중요한 프레임(Pos)을 가리면 성능이 빠르게 무너지고, 덜 중요한 프레임(Neg)은 가려도 성능이 유지됩니다.</p>
         <table class="res flex">
           <thead>
             <tr><th></th><th colspan="2">10%</th><th colspan="2">20%</th><th colspan="2">30%</th></tr>
@@ -474,11 +515,22 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
             <tr><td>4 (2/2)</td><td>9.49</td><td>7.85</td><td>13.65</td><td>7.64</td><td>28.75</td><td>9.35</td></tr>
             <tr><td>8 (3/5)</td><td>8.61</td><td>7.77</td><td>10.99</td><td>7.48</td><td>24.29</td><td>9.56</td></tr>
             <tr><td>16 (4/12)</td><td>8.77</td><td>7.78</td><td>13.14</td><td>7.68</td><td>31.81</td><td>9.28</td></tr>
-            <tr><td>32 (6/26)</td><td>9.13</td><td>7.75</td><td>14.52</td><td>7.55</td><td>33.79</td><td>8.98</td></tr>
           </tbody>
         </table>
-        <p class="cap">SSL-Conformer+TCM · In-the-Wild</p>
+        <p class="cap">마스킹 전 EER 7.85% · SSL-Conformer+TCM · In-the-Wild</p>
       </div>
+    </div>
+    <div class="col">
+      <div class="bars one" role="img" aria-label="설명 1건당 생성 시간(ms). DeepSHAP 420.5, GradientSHAP 226.1, GATR 71.1, Grad-CAM 67.8, FLEX 27.1">
+        <div><h4>설명 생성 시간 (ms)</h4>
+<div class="bar"><span class="lbl">DeepSHAP</span><span class="track"><span class="fill" style="display:block;width:100.0%"></span></span><span class="v">420.5</span></div>
+<div class="bar"><span class="lbl">GradientSHAP</span><span class="track"><span class="fill" style="display:block;width:53.8%"></span></span><span class="v">226.1</span></div>
+<div class="bar"><span class="lbl">GATR</span><span class="track"><span class="fill" style="display:block;width:16.9%"></span></span><span class="v">71.1</span></div>
+<div class="bar"><span class="lbl">Grad-CAM</span><span class="track"><span class="fill" style="display:block;width:16.1%"></span></span><span class="v">67.8</span></div>
+<div class="bar ours"><span class="lbl">FLEX (Ours)</span><span class="track"><span class="fill" style="display:block;width:6.4%"></span></span><span class="v">27.1</span></div>
+        </div>
+      </div>
+      <figure class="panel"><img src="img/flex_example.jpg" alt="부분 위조 음성에 대한 FLEX 결과: 진짜 음성 구간에서 정렬 점수가 높고 위조 구간에서 낮음"><figcaption>예시 · 부분 위조 음성에서 진짜 음성 구간에 높은 점수가 집중</figcaption></figure>
     </div>
   </div>
 </div></section>
@@ -486,32 +538,35 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <section class="slide" data-title="SAFE" id="p-safe"><div class="wrap pslide">
   <header class="phead">
     <div class="pmeta"><p class="eyebrow">Project 03 / 06 · Research</p><span class="chip wip">ICASSP 2027 · 제1저자 · 심사 중</span><span class="chip">Audio Forensics</span></div>
-    <h2>SAFE <span class="psub">말소리가 섞인 녹음에서 녹음 환경을 분류하는 포렌식 기법</span></h2>
-    <p class="summary">녹음 속 배경음으로 녹음 장소를 추정하는 음향 장면 분류(ASC)를 수사 증거로 쓰기 위해, 말소리는 억제하고 장소 단서는 보존합니다.</p>
+    <h2>SAFE <span class="psub">음성이 포함된 녹음에서 녹음 환경을 분류하는 포렌식 기법</span></h2>
+    <p class="summary">배경음으로 녹음 장소를 추정하는 장면 분류에서, 음성은 억제하고 장소 단서는 보존합니다.</p>
   </header>
-  <div class="split">
-    <div class="col">
-      <dl class="pdl">
-        <div><dt>Problem</dt><dd>수사용 녹음에는 대부분 말소리가 섞여 있어 배경음 단서가 가려지고, 장면 분류 성능이 크게 떨어집니다.</dd></div>
-        <div><dt>Approach</dt><dd>깨끗한 장면으로 학습한 분류 모델을 동결해 교사로 두고, 음성 억제 네트워크를 복원·표현 보존·분류 손실로 지도 학습합니다.</dd></div>
-        <div><dt>Result</dt><dd>말소리가 섞인 조건에서 분류 성능(macro-F1)을 평균 20.2% 상대 향상했습니다.</dd></div>
-      </dl>
-      <p class="stack"><b>Stack</b> · PyTorch · PaSST · STFT 마스킹 기반 음성 억제 · Teacher-guided training</p>
-    </div>
-    <figure class="panel col"><img src="img/safe_intro.jpg" alt="일반 ASC 환경과 포렌식 ASC 시나리오 비교: 말소리가 장면 단서를 가려 장면 예측이 모호해짐"><figcaption>문제 설정 · 말소리가 섞이면 장면 단서가 가려져 예측이 모호해집니다</figcaption></figure>
+  <div class="figrow">
+    <figure class="panel"><img src="img/safe_intro.jpg" alt="일반 ASC 환경과 포렌식 ASC 시나리오 비교: 음성이 장면 단서를 가려 장면 예측이 모호해짐"></figure>
+    <figure class="panel"><img src="img/safe_arch.jpg" alt="SAFE 2단계 학습 구조: 1단계 ASC 교사 학습, 2단계 교사 지도 음성 억제 학습"><figcaption>구조 · 1단계 분류 교사 학습 → 2단계 교사 지도 음성 억제 학습</figcaption></figure>
+  </div>
+  <div class="par3 two">
+    <div><h4>Problem</h4><p>수사용 녹음에는 대부분 음성이 섞여 있어 배경음 단서가 가려지고, 장면 분류 성능이 크게 떨어집니다.</p></div>
+    <div><h4>Approach</h4><p>깨끗한 장면으로 학습한 분류 모델을 동결해 교사로 두고, 음성 억제 네트워크를 복원·표현 보존·분류 손실로 지도 학습합니다.</p></div>
   </div>
 </div></section>
 
-<section class="slide" data-title="SAFE · 구조와 결과" id="p-safe-result"><div class="wrap pslide">
+<section class="slide" data-title="SAFE · 결과" id="p-safe-result"><div class="wrap pslide">
   <header class="phead">
     <div class="pmeta"><p class="eyebrow">Project 03 / 06 · Result</p></div>
-    <h2>SAFE <span class="psub">구조와 실험 결과</span></h2>
+    <h2>SAFE <span class="psub">실험 결과</span></h2>
   </header>
-  <div class="split">
-    <figure class="panel col"><img src="img/safe_arch.jpg" alt="SAFE 2단계 학습 구조: 1단계 ASC 교사 학습, 2단계 교사 지도 음성 억제 학습"><figcaption>구조 · 1단계 분류 교사 학습 → 2단계 교사 지도 음성 억제 학습</figcaption></figure>
+  <div class="split dna-res">
+    <div class="col">
+      <div class="tiles vert">
+        <div class="tile hl"><b>68.3 → 81.0</b><span>한국어 기반 환경 F1 · Baseline 대비 +12.7</span></div>
+        <div class="tile"><b>56.3 → 68.6</b><span>영어 기반 환경 F1 · Baseline 대비 +12.3</span></div>
+      </div>
+      <p class="note-p">다른 음성 제거 기법은 한쪽 환경에서 오히려 성능이 떨어졌지만, SAFE는 두 환경 모두에서 가장 크게 향상했습니다.</p>
+    </div>
     <div class="col">
       <div class="tbl-wrap">
-        <h4>음성 제거·억제 기법 비교 · SBR 10 dB</h4>
+        <h4>음성 제거·억제 기법 비교 · SBR 10 dB · macro-F1 (%)</h4>
         <table class="res safe">
           <thead>
             <tr><th>Method</th><th>한국어 기반 환경</th><th>영어 기반 환경</th></tr>
@@ -531,6 +586,35 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
     </div>
   </div>
 </div></section>
+
+<section class="slide" data-title="Publications" id="publications">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow">Publications</p>
+<h2>논문 및 학술 성과</h2>
+<p>전체 목록은 <a href="https://scholar.google.com/citations?user=IYl2mi0AAAAJ&amp;hl=ko" rel="noopener" target="_blank">Google Scholar</a>에서 확인할 수 있습니다.</p>
+</div>
+<div aria-label="연구 분야 필터" class="filters" role="group">
+<button aria-pressed="true" data-f="all" id="f-all" type="button">전체</button>
+<button aria-pressed="false" data-f="add" id="f-add" type="button">딥페이크 탐지</button>
+<button aria-pressed="false" data-f="rob" id="f-rob" type="button">강건성</button>
+<button aria-pressed="false" data-f="xai" id="f-xai" type="button">설명가능성</button>
+<button aria-pressed="false" data-f="sv" id="f-sv" type="button">화자 인증</button>
+<button aria-pressed="false" data-f="for" id="f-for" type="button">오디오 포렌식</button>
+</div>
+<ul class="pubs" id="pubs">
+<li data-f="add rob"><span class="venue">ACM CCS 2024</span><div><p class="t">Trident of Poseidon: A Generalized Approach for Detecting Deepfake Voices</p><div class="badges"><span class="chip">공동저자</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add xai"><span class="venue">CISC-W 2024</span><div><p class="t">Grad-CAM을 이용한 딥페이크 음성 탐지 시스템의 결정 설명</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="rob"><span class="venue">한국음향학회 2025</span><div><p class="t">음성 변형 추적: 강건한 음성 처리를 위한 노이즈 분류 접근법</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">9월 특별호</span><span class="chip">강건성</span></div></div></li>
+<li data-f="add sv"><span class="venue">3D-SEC 2025</span><div><p class="t">Defending Speaker Verification Against Deepfake: A Multi-Step Approach</p><div class="badges"><span class="chip">공동저자</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add rob"><span class="venue">ICASSP 2026</span><div><p class="t"><a href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">Dynamic Noise-Aware Multi-LoRA Framework towards Real-World Audio Deepfake Detection</a></p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span><a class="chip" href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">IEEE Xplore ↗</a><a class="chip" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=ko&amp;user=IYl2mi0AAAAJ&amp;citation_for_view=IYl2mi0AAAAJ:9yKSN-GCB0IC" rel="noopener" target="_blank">Scholar ↗</a></div></div></li>
+<li data-f="add sv"><span class="venue">ICASSP 2026 WildSpoof</span><div><p class="t">Robust SASV System in Real-World Scenarios: A Fusion Approach for the WildSpoof Challenge</p><div class="badges"><span class="chip">공동저자</span><span class="chip hl">Challenge 2위</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add xai"><span class="venue">WISA 2026</span><div><p class="t">FLEX: Frame-Level Explanations for Trustworthy Audio Deepfake Detection</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add for"><span class="venue">3D-SEC 2026</span><div><p class="t">Explaining Suspicious Speech Beyond Binary Deepfake Detection: A Five-Module Proposition-Centered Evidence Profile</p><div class="badges"><span class="chip">공동저자</span><span class="chip">Accepted</span><span class="chip">오디오 포렌식</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="for"><span class="venue">ICASSP 2027</span><div><p class="t">SAFE: A Speech Suppression-Based Acoustic Scene Classification Framework for Environmental Evidence in Audio Forensics</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip wip">Under Review</span><span class="chip">오디오 포렌식</span></div></div></li>
+</ul>
+</div>
+</section>
 
 <section class="slide" data-title="탐지 웹 서비스" id="p-service"><div class="wrap pslide">
   <header class="phead">
@@ -564,7 +648,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
         <div><dt>Approach</dt><dd>음성 탐지 모델·API를 개발해 제공하고, 기관별 API 조건과 변경 이력을 문서화해 인터페이스를 표준화했습니다. MLOps 흐름을 익혀 기관별 수정 사항과 일정을 조율했습니다.</dd></div>
         <div><dt>Result</dt><dd>1차 멀티모달 통합 시스템을 직접 구축했고, 여러 탐지 기술을 하나의 온프레미스 시스템으로 연결해 독일 LKA에 제공했습니다.</dd></div>
       </dl>
-      <p class="stack"><b>Stack</b> · React · FastAPI · Celery · Redis · Docker · PyTorch · Gunicorn</p>
     </div>
     <figure class="panel col"><img src="img/integration.jpg" alt="통합 시스템 구조: 사용자 입력 → React 프론트엔드 → FastAPI 통합 서버 → 외부 기관 탐지 API와 자체 음성 탐지 모델"><figcaption>시스템 구조 · 프론트엔드, 통합 서버, 기관별 탐지 API</figcaption></figure>
   </div>
@@ -601,46 +684,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
   </div>
 </div></section>
 
-<section class="slide" data-title="Publications" id="publications">
-<div class="wrap">
-<div class="sec-head">
-<p class="eyebrow">Publications</p>
-<h2>논문 및 학술 성과</h2>
-<p>전체 목록은 <a href="https://scholar.google.com/citations?user=IYl2mi0AAAAJ&amp;hl=ko" rel="noopener" target="_blank">Google Scholar</a>에서 확인할 수 있습니다.</p>
-</div>
-<div aria-label="연구 분야 필터" class="filters" role="group">
-<button aria-pressed="true" data-f="all" id="f-all" type="button">전체</button>
-<button aria-pressed="false" data-f="add" id="f-add" type="button">딥페이크 탐지</button>
-<button aria-pressed="false" data-f="rob" id="f-rob" type="button">강건성</button>
-<button aria-pressed="false" data-f="xai" id="f-xai" type="button">설명가능성</button>
-<button aria-pressed="false" data-f="sv" id="f-sv" type="button">화자 인증</button>
-<button aria-pressed="false" data-f="for" id="f-for" type="button">오디오 포렌식</button>
-</div>
-<ul class="pubs" id="pubs">
-<li data-f="add rob"><span class="venue">ACM CCS 2024</span><div><p class="t">Trident of Poseidon: A Generalized Approach for Detecting Deepfake Voices</p><div class="badges"><span class="chip">공동저자</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span></div></div></li>
-<li data-f="add xai"><span class="venue">CISC-W 2024</span><div><p class="t">Grad-CAM을 이용한 딥페이크 음성 탐지 시스템의 결정 설명</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
-<li data-f="rob"><span class="venue">한국음향학회 2025</span><div><p class="t">음성 변형 추적: 강건한 음성 처리를 위한 노이즈 분류 접근법</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">9월 특별호</span><span class="chip">강건성</span></div></div></li>
-<li data-f="add sv"><span class="venue">3D-SEC 2025</span><div><p class="t">Defending Speaker Verification Against Deepfake: A Multi-Step Approach</p><div class="badges"><span class="chip">공동저자</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
-<li data-f="add rob"><span class="venue">ICASSP 2026</span><div><p class="t"><a href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">Dynamic Noise-Aware Multi-LoRA Framework towards Real-World Audio Deepfake Detection</a></p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span><a class="chip" href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">IEEE Xplore ↗</a><a class="chip" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=ko&amp;user=IYl2mi0AAAAJ&amp;citation_for_view=IYl2mi0AAAAJ:9yKSN-GCB0IC" rel="noopener" target="_blank">Scholar ↗</a></div></div></li>
-<li data-f="add sv"><span class="venue">ICASSP 2026 WildSpoof</span><div><p class="t">Robust SASV System in Real-World Scenarios: A Fusion Approach for the WildSpoof Challenge</p><div class="badges"><span class="chip">공동저자</span><span class="chip hl">Challenge 2위</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
-<li data-f="add xai"><span class="venue">WISA 2026</span><div><p class="t">FLEX: Frame-Level Explanations for Trustworthy Audio Deepfake Detection</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
-<li data-f="add for"><span class="venue">3D-SEC 2026</span><div><p class="t">Explaining Suspicious Speech Beyond Binary Deepfake Detection: A Five-Module Proposition-Centered Evidence Profile</p><div class="badges"><span class="chip">공동저자</span><span class="chip">Accepted</span><span class="chip">오디오 포렌식</span><span class="chip">딥페이크 탐지</span></div></div></li>
-<li data-f="for"><span class="venue">ICASSP 2027</span><div><p class="t">SAFE: A Speech Suppression-Based Acoustic Scene Classification Framework for Environmental Evidence in Audio Forensics</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip wip">Under Review</span><span class="chip">오디오 포렌식</span></div></div></li>
-</ul>
-</div>
-</section>
-<section class="slide" data-title="GitHub" id="github">
-<div class="wrap">
-<div class="sec-head">
-<p class="eyebrow">GitHub</p>
-<h2>그 밖의 프로젝트</h2>
-</div>
-<div class="repos">
-<a class="repo" href="https://github.com/woongja/RAG-project" rel="noopener" target="_blank"><span class="name">RAG-project</span><p>텍스트·PDF로 지식 베이스를 갱신하며 대화할 수 있는 문서 기반 RAG 챗봇입니다. 대학원 수업 프로젝트.</p><div class="p-meta"><span class="chip">LangChain</span><span class="chip">AWS Bedrock</span><span class="chip">Chroma</span><span class="chip">Streamlit</span></div></a>
-<a class="repo" href="https://github.com/woongja/mediapipe_AI" rel="noopener" target="_blank"><span class="name">mediapipe_AI</span><p>MediaPipe로 추출한 손가락 관절 좌표로 데이터셋을 만들고 동작 인식 모델을 학습한 학부 졸업 프로젝트입니다.</p><div class="p-meta"><span class="chip">MediaPipe</span><span class="chip">Python</span><span class="chip">학부 졸업작품</span></div></a>
-</div>
-</div>
-</section>
 <section class="slide" data-title="Awards" id="awards">
 <div class="wrap">
 <div class="sec-head">
@@ -665,6 +708,11 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <div class="mail"><code id="email">wcn4457@naver.com</code><button class="btn primary" id="copy" type="button">이메일 복사</button></div>
 <p aria-live="polite" class="status" id="copy-status"></p>
 <div class="links"><a class="btn" href="https://github.com/woongja" rel="noopener" target="_blank">GitHub</a><a class="btn" href="https://scholar.google.com/citations?user=IYl2mi0AAAAJ&amp;hl=ko" rel="noopener" target="_blank">Google Scholar</a></div>
+<p class="eyebrow" style="margin-top:12px">그 밖의 저장소</p>
+<div class="repos mini">
+<a class="repo" href="https://github.com/woongja/RAG-project" rel="noopener" target="_blank"><span class="name">RAG-project</span><p>텍스트·PDF로 지식 베이스를 갱신하며 대화할 수 있는 문서 기반 RAG 챗봇입니다. 대학원 수업 프로젝트.</p><div class="p-meta"><span class="chip">LangChain</span><span class="chip">AWS Bedrock</span><span class="chip">Chroma</span><span class="chip">Streamlit</span></div></a>
+<a class="repo" href="https://github.com/woongja/mediapipe_AI" rel="noopener" target="_blank"><span class="name">mediapipe_AI</span><p>MediaPipe로 추출한 손가락 관절 좌표로 데이터셋을 만들고 동작 인식 모델을 학습한 학부 졸업 프로젝트입니다.</p><div class="p-meta"><span class="chip">MediaPipe</span><span class="chip">Python</span><span class="chip">학부 졸업작품</span></div></a>
+</div>
 <p class="copy">© 2026 이웅재 · Woongjae Lee</p></div>
 </section>
 </main><div aria-label="슬라이드 이동" class="controls" role="group">
