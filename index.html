@@ -303,7 +303,7 @@ table.res.safe th:not(:first-child),table.res.safe td:not(:first-child){text-ali
 table.res.flex th,table.res.flex td{text-align:center}
 table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 .svc-shot{padding:10px}
-.svc-shot img{max-height:16vh}
+.svc-shot img{max-height:26vh;width:100%}
 .svc-shot figcaption{margin-top:4px}
 </style>
 </head>
@@ -544,8 +544,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
         <div><dt>Approach</dt><dd>업로드 → ffmpeg 추출 → 추론 → 구간별 결과·파형 시각화 파이프라인을 만들고, 추론을 API로 분리해 모델 로딩 구조를 개선했습니다.</dd></div>
         <div><dt>Result</dt><dd>KBS·MBC·MBN·SBS 방송과 국내외 전시에서 반복 시연했고, Docker 기반 On-Premise로 패키징해 N사에 기술이전했습니다.</dd></div>
       </dl>
-      <p class="stack"><b>Stack</b> · PyTorch · fairseq/wav2vec2 · Flask · Gunicorn · Docker · CUDA · ffmpeg</p>
-      <figure class="panel svc-shot"><img src="img/webapp.jpg" alt="딥페이크 음성 탐지 대시보드 화면: 영상 업로드, 파일 정보, Fake 판정, 구간별 탐지 이력, 파형 분석"><figcaption>뉴스 영상 속 보이스피싱 음성을 분석한 화면</figcaption></figure>
+      <figure class="panel svc-shot"><img src="img/webapp_crop.jpg" alt="딥페이크 음성 탐지 대시보드 화면: 영상 업로드, 파일 정보, Fake 판정, 구간별 탐지 이력, 파형 분석"><figcaption>뉴스 영상 속 보이스피싱 음성을 분석한 화면</figcaption></figure>
     </div>
     <div class="col">
       <figure class="panel"><video id="demo-video" src="img/demo.mp4" poster="img/demo_poster.jpg" controls muted playsinline preload="metadata" aria-label="딥페이크 음성 탐지 웹 서비스 시연 영상"></video><figcaption>시연 영상 (57초) · 업로드 → 탐지 결과 → 구간 선택 탐지</figcaption></figure>
