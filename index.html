@@ -428,7 +428,7 @@ table.res.safe th:not(:first-child),table.res.safe td:not(:first-child){text-ali
     <h2>FLEX <span class="psub">프레임 단위로 딥페이크 판단 근거를 설명하는 기법</span></h2>
     <p class="summary">탐지 모델을 다시 학습하지 않고, 음성의 어느 프레임이 Real 또는 Fake 판단에 가까운지를 점수로 보여 줍니다.</p>
   </header>
-  <div class="split">
+  <div class="split center">
     <div class="col">
       <dl class="pdl">
         <div><dt>Problem</dt><dd>탐지 모델은 음성 전체에 대해 Real/Fake만 알려 줄 뿐, 어느 구간을 근거로 판단했는지 설명하지 못합니다.</dd></div>
@@ -438,7 +438,7 @@ table.res.safe th:not(:first-child),table.res.safe td:not(:first-child){text-ali
       <p class="stack"><b>Stack</b> · XLSR (wav2vec 2.0) · SSL-AASIST · SSL-Conformer+TCM · ASVspoof 2019 · In-the-Wild</p>
       <div class="links"><a class="btn" href="https://github.com/woongja/FLEX-Frame-Level-Explanations-for-Audio-Deepfake-Detection" target="_blank" rel="noopener">GitHub 코드</a></div>
     </div>
-    <figure class="panel col"><img src="img/flex_arch.jpg" alt="FLEX 구조: 1단계 학습 음성으로 클래스별 프로토타입 구성, 2단계 테스트 음성의 프레임 표현과 예측 클래스 프로토타입 간 거리로 프레임 중요도 계산"><figcaption>구조 · 프로토타입 구성(오프라인) → 프레임 단위 설명(추론)</figcaption></figure>
+    <figure class="panel col"><img src="img/flex_arch.jpg" alt="FLEX 구조: 1단계 학습 음성으로 클래스별 프로토타입 구성, 2단계 테스트 음성의 프레임 표현과 예측 클래스 프로토타입 간 거리로 프레임 중요도 계산"></figure>
   </div>
 </div></section>
 
@@ -609,20 +609,21 @@ table.res.safe th:not(:first-child),table.res.safe td:not(:first-child){text-ali
 </div>
 <div aria-label="연구 분야 필터" class="filters" role="group">
 <button aria-pressed="true" data-f="all" id="f-all" type="button">전체</button>
+<button aria-pressed="false" data-f="add" id="f-add" type="button">딥페이크 탐지</button>
 <button aria-pressed="false" data-f="rob" id="f-rob" type="button">강건성</button>
 <button aria-pressed="false" data-f="xai" id="f-xai" type="button">설명가능성</button>
 <button aria-pressed="false" data-f="sv" id="f-sv" type="button">화자 인증</button>
 <button aria-pressed="false" data-f="for" id="f-for" type="button">오디오 포렌식</button>
 </div>
 <ul class="pubs" id="pubs">
-<li data-f="rob"><span class="venue">ACM CCS 2024</span><div><p class="t">Trident of Poseidon: A Generalized Approach for Detecting Deepfake Voices</p><div class="badges"><span class="chip">공동저자</span><span class="chip">강건성</span></div></div></li>
-<li data-f="xai"><span class="venue">CISC-W 2024</span><div><p class="t">Grad-CAM을 이용한 딥페이크 음성 탐지 시스템의 결정 설명</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span></div></div></li>
-<li data-f="rob"><span class="venue">한국음향학회 2025</span><div><p class="t">음성 변형 추적: 강건한 음성 처리를 위한 노이즈 분류 접근법</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip">강건성</span></div></div></li>
-<li data-f="sv"><span class="venue">3D-SEC 2025</span><div><p class="t">Defending Speaker Verification Against Deepfake: A Multi-Step Approach</p><div class="badges"><span class="chip">공동저자</span><span class="chip">화자 인증</span></div></div></li>
-<li data-f="rob"><span class="venue">ICASSP 2026</span><div><p class="t"><a href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">Dynamic Noise-Aware Multi-LoRA Framework towards Real-World Audio Deepfake Detection</a></p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">강건성</span><a class="chip" href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">IEEE Xplore ↗</a><a class="chip" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=ko&amp;user=IYl2mi0AAAAJ&amp;citation_for_view=IYl2mi0AAAAJ:9yKSN-GCB0IC" rel="noopener" target="_blank">Scholar ↗</a></div></div></li>
-<li data-f="sv"><span class="venue">ICASSP 2026 WildSpoof</span><div><p class="t">Robust SASV System in Real-World Scenarios: A Fusion Approach for the WildSpoof Challenge</p><div class="badges"><span class="chip">공동저자</span><span class="chip hl">Challenge 2위</span><span class="chip">화자 인증</span></div></div></li>
-<li data-f="xai"><span class="venue">WISA 2026</span><div><p class="t">FLEX: Frame-Level Explanations for Trustworthy Audio Deepfake Detection</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span></div></div></li>
-<li data-f="for"><span class="venue">3D-SEC 2026</span><div><p class="t">Explaining Suspicious Speech Beyond Binary Deepfake Detection: A Five-Module Proposition-Centered Evidence Profile</p><div class="badges"><span class="chip">공동저자</span><span class="chip">Accepted</span><span class="chip">오디오 포렌식</span></div></div></li>
+<li data-f="add rob"><span class="venue">ACM CCS 2024</span><div><p class="t">Trident of Poseidon: A Generalized Approach for Detecting Deepfake Voices</p><div class="badges"><span class="chip">공동저자</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add xai"><span class="venue">CISC-W 2024</span><div><p class="t">Grad-CAM을 이용한 딥페이크 음성 탐지 시스템의 결정 설명</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="rob"><span class="venue">한국음향학회 2025</span><div><p class="t">음성 변형 추적: 강건한 음성 처리를 위한 노이즈 분류 접근법</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">9월 특별호</span><span class="chip">강건성</span></div></div></li>
+<li data-f="add sv"><span class="venue">3D-SEC 2025</span><div><p class="t">Defending Speaker Verification Against Deepfake: A Multi-Step Approach</p><div class="badges"><span class="chip">공동저자</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add rob"><span class="venue">ICASSP 2026</span><div><p class="t"><a href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">Dynamic Noise-Aware Multi-LoRA Framework towards Real-World Audio Deepfake Detection</a></p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span><a class="chip" href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">IEEE Xplore ↗</a><a class="chip" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=ko&amp;user=IYl2mi0AAAAJ&amp;citation_for_view=IYl2mi0AAAAJ:9yKSN-GCB0IC" rel="noopener" target="_blank">Scholar ↗</a></div></div></li>
+<li data-f="add sv"><span class="venue">ICASSP 2026 WildSpoof</span><div><p class="t">Robust SASV System in Real-World Scenarios: A Fusion Approach for the WildSpoof Challenge</p><div class="badges"><span class="chip">공동저자</span><span class="chip hl">Challenge 2위</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add xai"><span class="venue">WISA 2026</span><div><p class="t">FLEX: Frame-Level Explanations for Trustworthy Audio Deepfake Detection</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
+<li data-f="add for"><span class="venue">3D-SEC 2026</span><div><p class="t">Explaining Suspicious Speech Beyond Binary Deepfake Detection: A Five-Module Proposition-Centered Evidence Profile</p><div class="badges"><span class="chip">공동저자</span><span class="chip">Accepted</span><span class="chip">오디오 포렌식</span><span class="chip">딥페이크 탐지</span></div></div></li>
 <li data-f="for"><span class="venue">ICASSP 2027</span><div><p class="t">SAFE: A Speech Suppression-Based Acoustic Scene Classification Framework for Environmental Evidence in Audio Forensics</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip wip">Under Review</span><span class="chip">오디오 포렌식</span></div></div></li>
 </ul>
 </div>
@@ -711,7 +712,7 @@ table.res.safe th:not(:first-child),table.res.safe td:not(:first-child){text-ali
   btns.forEach(function(b){b.addEventListener('click',function(){
     var f=b.getAttribute('data-f');
     btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
-    items.forEach(function(li){li.hidden=!(f==='all'||li.getAttribute('data-f')===f);});
+    items.forEach(function(li){li.hidden=!(f==='all'||li.getAttribute('data-f').split(' ').indexOf(f)>-1);});
   });});
 
   /* copy email */
