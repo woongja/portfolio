@@ -354,6 +354,50 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 .figrow .panel figcaption{margin-top:8px;font-size:12px}
 #p-dna .figrow,#p-dna .par3.two{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
 .figrow+.par3.two{gap:20px}
+
+/* ---- dark bookend slides */
+.slide.dark{--bg:#14213D;--surface:#1B2B4F;--ink:#F3F6FB;--muted:#B5C0D6;--line:#2E3F63;--accent:#8FB0F7;--accent-soft:#24396A;--accent-ink:#14213D;background:var(--bg);color:var(--ink)}
+.slide.dark .btn.primary{background:#2563EB;border-color:#2563EB;color:#FFFFFF}
+.slide.dark .stats{border-top-color:#8FB0F7}
+.slide.dark .stat .n{color:#FFFFFF}
+.slide.dark .photo{border:none;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.slide.dark .mail code{background:var(--surface);border-color:var(--line)}
+.slide.dark .repo{background:var(--surface);border:none}
+.slide.dark .repo:hover{background:#223662}
+.slide.dark .copy{color:var(--muted)}
+/* ---- fewer boxes */
+.tile{border:none;background:#EDF1F8}
+.tile.hl{background:var(--accent)}
+.tbl-wrap,.bars{border:none;box-shadow:0 1px 0 rgba(20,33,61,.04),0 8px 24px -16px rgba(20,33,61,.18)}
+.repo{border:none;box-shadow:0 8px 24px -16px rgba(20,33,61,.18)}
+.card{border:none;box-shadow:0 8px 24px -16px rgba(20,33,61,.18)}
+.btn{border-color:transparent;background:var(--accent-soft);color:var(--accent)}
+.btn:hover{background:var(--accent);color:#fff}
+.chip{border-color:transparent;background:#EDF1F8}
+.slide.dark .chip{background:var(--surface);color:var(--muted)}
+.mail code{border:none;background:var(--surface)}
+.pubs li{border-color:var(--line)}
+.on-dark .controls{background:rgba(27,43,79,.92);border-color:#2E3F63;color:#F3F6FB;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+.on-dark .controls button{background:#24396A;border-color:transparent;color:#F3F6FB}
+.on-dark .controls button:disabled{opacity:.35}
+.on-dark .controls *{color:#F3F6FB}
+.on-dark .controls button{color:#F3F6FB}
+.on-dark .nav{background:rgba(20,33,61,.9);border-bottom-color:#2E3F63}
+.on-dark .nav .brand,.on-dark .nav a.link{color:#F3F6FB}
+.on-dark .nav a.link{color:#B5C0D6}
+.on-dark .nav a.link.on,.on-dark .nav a.link:hover{background:#24396A;color:#F3F6FB}
+.ugrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ucard{background:var(--surface);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 24px -16px rgba(20,33,61,.18)}
+.ucard h3{font-size:17px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ucard h3 .chip{font-size:11px}
+.ucard p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+.ucard .eyebrow{font-size:11px}
+.ucard .p-meta{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px}
+.ucard .p-meta .chip{font-size:11px}
+.repos.mini{grid-template-columns:minmax(0,380px)}
+.edu2{margin-top:8px}
+.next-line{margin-top:14px;font-size:14px;color:var(--muted)}
+.next-line a{font-weight:600}
 </style>
 </head>
 <body>
@@ -364,7 +408,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </div>
 </nav>
 <main aria-label="포트폴리오 슬라이드" class="deck" id="deck">
-<section class="slide hero" data-title="Home" id="home">
+<section class="slide hero dark" data-title="Home" id="home">
 <div class="wrap">
 <div class="hero-grid">
 <div>
@@ -398,10 +442,10 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </div>
 <div class="about-grid">
 <div class="kv">
-<div><h3>Education</h3><p>숭실대학교 일반대학원 정보통신공학과 석사</p><p class="sub">2024.09 – 2026.08 · 통신망보안연구실</p><p class="sub">학위논문 · 실환경 잡음에 강건성을 갖는 오디오 딥페이크 탐지 프레임워크 연구</p></div>
+<div><h3>Education</h3><p>숭실대학교 전자정보공학부 IT융합학과 학사</p><p class="sub">2017.03 – 2024.02</p><p class="edu2">숭실대학교 일반대학원 정보통신공학과 석사</p><p class="sub">2024.09 – 2026.08 · 통신망보안연구실</p><p class="sub">학위논문 · 실환경 잡음에 강건성을 갖는 오디오 딥페이크 탐지 프레임워크 연구</p></div>
 <div><h3>Research Interests</h3><p>Audio Deepfake Detection · Robust AI · Explainable AI · Speaker Verification · Audio Forensics</p></div>
 <div><h3>Patents</h3><ul><li>국내 · 노이즈 적응형 딥페이크 음성 탐지 시스템 <span class="sub">(10-2025-0137328)</span></li><li>미국 · Noise-Adaptive Audio Deepfake Detection and Method <span class="sub">(19/432,349)</span></li></ul></div>
-<div><h3>R&amp;D Projects</h3><ul><li>경찰청 · 허위조작 콘텐츠 진위 판별 시스템 개발 <span class="sub">(2025.04 – 2026.12)</span></li><li>성균관대 · 딥페이크 탐지 고도화·생성 억제·유포 방지 플랫폼 <span class="sub">(2024.03 – 2025.12)</span></li><li>중견연구 · 위변조 음성에 강인한 화자 인증 모델 <span class="sub">(2025.03 – 2025.12)</span></li></ul></div>
+<div><h3>R&amp;D Projects</h3><ul><li>경찰청 · 허위조작 콘텐츠 진위 판별 시스템 개발</li><li>과학기술정보통신부 · 딥페이크 탐지 고도화·생성 억제·유포 방지 플랫폼</li><li>과학기술정보통신부 · 위변조 음성에 강인한 화자 인증 모델</li></ul></div>
 </div>
 <ol aria-label="경력 타임라인" class="timeline">
 <li><div class="when">2023</div><div class="what">딥페이크 음성 탐지 연구실 인턴</div><div class="note">데이터셋 정리로 AI 연구를 처음 경험</div></li>
@@ -415,6 +459,40 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </div>
 </div>
 </section>
+<section class="slide" data-title="학부 프로젝트" id="p-undergrad"><div class="wrap pslide">
+  <header class="phead">
+    <div class="pmeta"><p class="eyebrow">Prologue · Undergraduate</p><span class="chip">2017 – 2023</span><span class="chip hl">수상 2건</span></div>
+    <h2>여러 분야를 거쳐 음성 AI로 <span class="psub">학부 시절의 시도들</span></h2>
+    <p class="summary">로봇 모션, 영상처리, 임베디드, 적정기술까지 분야를 가리지 않고 시도했고, 졸업작품에서는 딥러닝 모델과 서버·앱을 하나의 서비스로 완성했습니다. 이 경험이 2023년 딥페이크 음성 탐지 연구실 인턴으로 이어졌습니다.</p>
+  </header>
+  <div class="ugrid">
+    <article class="ucard">
+      <p class="eyebrow">2017.04 – 2017.08 · 팀원</p>
+      <h3>SOC 태권로봇 경진대회</h3>
+      <p>상대 로봇의 동작에 반응해 회피·공격·방어를 수행하는 휴머노이드 로봇. 관절 모터에 과부하가 걸리지 않는 범위에서 태권도 동작 모션을 설계하고 하드웨어를 관리했습니다.</p>
+      <div class="p-meta"><span class="chip">로봇 모션 제어</span><span class="chip">영상처리</span><span class="chip">16팀 중 8위</span></div>
+    </article>
+    <article class="ucard">
+      <p class="eyebrow">2020.02 – 2020.11 · 팀장 · 영상처리 담당</p>
+      <h3>SW 임베디드 소프트웨어 경진대회 <span class="chip hl">수상</span></h3>
+      <p>휴머노이드 로봇이 라인 트레이싱으로 이동하며 4개 미션 중 3개를 완료하는 과제. 컨투어·Convex hull로 방위와 화살표를 인식하고, HSV 마스킹과 면적 비율로 구역·미션 완료 여부를 판별하는 영상처리 전 과정을 맡았습니다.</p>
+      <div class="p-meta"><span class="chip">OpenCV</span><span class="chip">컨투어·HSV 마스킹</span><span class="chip">Hough line 라인 트레이싱</span></div>
+    </article>
+    <article class="ucard">
+      <p class="eyebrow">2021.07 – 2021.08 · 공모전</p>
+      <h3>글로벌 적정기술 창의설계 프로젝트 <span class="chip hl">장려상</span></h3>
+      <p>안전·재해 분야의 사회적 약자를 위한 적정기술 공모전. 겨울철 폭설로 비닐하우스가 무너지는 피해를 줄이기 위해, 지붕에 눈이 쌓이는 것을 최소화하는 구조 아이디어를 제안했습니다.</p>
+      <div class="p-meta"><span class="chip">적정기술</span><span class="chip">재해 예방</span></div>
+    </article>
+    <article class="ucard">
+      <p class="eyebrow">2023.06 – 2023.11 · 졸업작품</p>
+      <h3>RNN 기반 수어 번역 시스템</h3>
+      <p>MediaPipe로 추출한 손 랜드마크 시퀀스를 LSTM으로 학습해 수어를 번역하고, Flask 서버(HTTP·Socket.IO)와 Flutter 앱을 직접 구축해 실시간으로 연동했습니다.</p>
+      <div class="p-meta"><span class="chip">MediaPipe</span><span class="chip">LSTM</span><span class="chip">Flask · Socket.IO</span><span class="chip">Flutter</span><a class="chip" href="https://github.com/woongja/mediapipe_AI" target="_blank" rel="noopener">GitHub ↗</a></div>
+    </article>
+  </div>
+</div></section>
+
 <section class="slide" data-title="Competencies" id="competencies">
 <div class="wrap">
 <div class="sec-head">
@@ -701,7 +779,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </div>
 </div>
 </section>
-<section class="slide" data-title="Contact" id="contact">
+<section class="slide dark" data-title="Contact" id="contact">
 <div class="wrap contact">
 <p class="eyebrow">Contact</p>
 <p class="big">함께 이야기 나누고 싶습니다.</p>
@@ -711,7 +789,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <p class="eyebrow" style="margin-top:12px">그 밖의 저장소</p>
 <div class="repos mini">
 <a class="repo" href="https://github.com/woongja/RAG-project" rel="noopener" target="_blank"><span class="name">RAG-project</span><p>텍스트·PDF로 지식 베이스를 갱신하며 대화할 수 있는 문서 기반 RAG 챗봇입니다. 대학원 수업 프로젝트.</p><div class="p-meta"><span class="chip">LangChain</span><span class="chip">AWS Bedrock</span><span class="chip">Chroma</span><span class="chip">Streamlit</span></div></a>
-<a class="repo" href="https://github.com/woongja/mediapipe_AI" rel="noopener" target="_blank"><span class="name">mediapipe_AI</span><p>MediaPipe로 추출한 손가락 관절 좌표로 데이터셋을 만들고 동작 인식 모델을 학습한 학부 졸업 프로젝트입니다.</p><div class="p-meta"><span class="chip">MediaPipe</span><span class="chip">Python</span><span class="chip">학부 졸업작품</span></div></a>
 </div>
 <p class="copy">© 2026 이웅재 · Woongjae Lee</p></div>
 </section>
@@ -737,6 +814,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
     cur=i;var s=slides[i];pt.textContent=s.getAttribute('data-title')||'';pn.textContent=pad(i+1)+' / '+pad(N);
     pb.style.width=((i+1)/N*100)+'%';prev.disabled=i===0;next.disabled=i===N-1;
     var proj=/^p-/.test(s.id);
+    document.body.classList.toggle('on-dark',s.classList.contains('dark'));
     links.forEach(function(a){var h=a.getAttribute('href').slice(1);a.classList.toggle('on',h===s.id||(proj&&h==='p-dna'));});
   }
   var t;deck.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){mark(Math.round(deck.scrollLeft/deck.clientWidth));},60);},{passive:true});
