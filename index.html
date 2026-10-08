@@ -419,6 +419,67 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
   .js .slide.hero.in .hero-wave{opacity:.22!important}
   .js .slide:not(.in) .bar .fill{width:auto!important}
 }
+
+/* ---- quiet background for light slides: faint echo of the hero waveform + soft corner tint */
+.slide:not(.dark){background-color:var(--bg);background-image:radial-gradient(900px 420px at 100% 0%,rgba(36,87,214,.07),transparent 70%),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1320 220%22 preserveAspectRatio=%22none%22%3E%3Cg fill=%22rgba(36,87,214,0.07)%22%3E%3Crect x=%221.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%227.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2213.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2219.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2225.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2231.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2237.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2243.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2249.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2255.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2261.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2267.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2273.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2279.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2285.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%2291.0%22 y=%22102.9%22 width=%224.0%22 height=%2214.3%22 rx=%221.5%22/%3E%3Crect x=%2297.0%22 y=%2225.0%22 width=%224.0%22 height=%22170.1%22 rx=%221.5%22/%3E%3Crect x=%22103.0%22 y=%2234.7%22 width=%224.0%22 height=%22150.5%22 rx=%221.5%22/%3E%3Crect x=%22109.0%22 y=%2239.1%22 width=%224.0%22 height=%22141.8%22 rx=%221.5%22/%3E%3Crect x=%22115.0%22 y=%2298.2%22 width=%224.0%22 height=%2223.6%22 rx=%221.5%22/%3E%3Crect x=%22121.0%22 y=%2267.0%22 width=%224.0%22 height=%2286.0%22 rx=%221.5%22/%3E%3Crect x=%22127.0%22 y=%225.5%22 width=%224.0%22 height=%22209.0%22 rx=%221.5%22/%3E%3Crect x=%22133.0%22 y=%2232.2%22 width=%224.0%22 height=%22155.7%22 rx=%221.5%22/%3E%3Crect x=%22139.0%22 y=%2240.2%22 width=%224.0%22 height=%22139.6%22 rx=%221.5%22/%3E%3Crect x=%22145.0%22 y=%2212.3%22 width=%224.0%22 height=%22195.4%22 rx=%221.5%22/%3E%3Crect x=%22151.0%22 y=%2221.5%22 width=%224.0%22 height=%22177.0%22 rx=%221.5%22/%3E%3Crect x=%22157.0%22 y=%2271.3%22 width=%224.0%22 height=%2277.4%22 rx=%221.5%22/%3E%3Crect x=%22163.0%22 y=%2217.2%22 width=%224.0%22 height=%22185.7%22 rx=%221.5%22/%3E%3Crect x=%22169.0%22 y=%2243.2%22 width=%224.0%22 height=%22133.6%22 rx=%221.5%22/%3E%3Crect x=%22175.0%22 y=%2251.9%22 width=%224.0%22 height=%22116.2%22 rx=%221.5%22/%3E%3Crect x=%22181.0%22 y=%2231.7%22 width=%224.0%22 height=%22156.7%22 rx=%221.5%22/%3E%3Crect x=%22187.0%22 y=%2230.5%22 width=%224.0%22 height=%22159.1%22 rx=%221.5%22/%3E%3Crect x=%22193.0%22 y=%2231.0%22 width=%224.0%22 height=%22158.1%22 rx=%221.5%22/%3E%3Crect x=%22199.0%22 y=%2250.8%22 width=%224.0%22 height=%22118.4%22 rx=%221.5%22/%3E%3Crect x=%22205.0%22 y=%2274.9%22 width=%224.0%22 height=%2270.2%22 rx=%221.5%22/%3E%3Crect x=%22211.0%22 y=%2228.5%22 width=%224.0%22 height=%22163.0%22 rx=%221.5%22/%3E%3Crect x=%22217.0%22 y=%22101.8%22 width=%224.0%22 height=%2216.4%22 rx=%221.5%22/%3E%3Crect x=%22223.0%22 y=%22102.9%22 width=%224.0%22 height=%2214.2%22 rx=%221.5%22/%3E%3Crect x=%22229.0%22 y=%2289.0%22 width=%224.0%22 height=%2241.9%22 rx=%221.5%22/%3E%3Crect x=%22235.0%22 y=%2219.9%22 width=%224.0%22 height=%22180.3%22 rx=%221.5%22/%3E%3Crect x=%22241.0%22 y=%2236.8%22 width=%224.0%22 height=%22146.4%22 rx=%221.5%22/%3E%3Crect x=%22247.0%22 y=%2263.2%22 width=%224.0%22 height=%2293.5%22 rx=%221.5%22/%3E%3Crect x=%22253.0%22 y=%2276.0%22 width=%224.0%22 height=%2268.0%22 rx=%221.5%22/%3E%3Crect x=%22259.0%22 y=%22101.7%22 width=%224.0%22 height=%2216.5%22 rx=%221.5%22/%3E%3Crect x=%22265.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22271.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22277.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22283.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22289.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22295.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22301.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22307.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22313.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22319.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22325.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22331.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22337.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22343.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22349.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22355.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22361.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22367.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22373.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22379.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22385.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22391.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22397.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22403.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22409.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22415.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22421.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22427.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22433.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22439.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22445.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22451.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22457.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22463.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22469.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22475.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22481.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22487.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22493.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22499.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22505.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22511.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22517.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22523.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22529.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22535.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22541.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22547.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22553.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22559.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22565.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22571.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22577.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22583.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22589.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22595.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22601.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22607.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22613.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22619.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22625.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22631.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22637.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22643.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22649.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22655.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22661.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22667.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22673.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22679.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22685.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22691.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22697.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22703.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22709.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22715.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22721.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22727.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22733.0%22 y=%2280.5%22 width=%224.0%22 height=%2259.0%22 rx=%221.5%22/%3E%3Crect x=%22739.0%22 y=%2279.2%22 width=%224.0%22 height=%2261.7%22 rx=%221.5%22/%3E%3Crect x=%22745.0%22 y=%2262.6%22 width=%224.0%22 height=%2294.8%22 rx=%221.5%22/%3E%3Crect x=%22751.0%22 y=%2273.5%22 width=%224.0%22 height=%2273.1%22 rx=%221.5%22/%3E%3Crect x=%22757.0%22 y=%2275.5%22 width=%224.0%22 height=%2268.9%22 rx=%221.5%22/%3E%3Crect x=%22763.0%22 y=%2266.7%22 width=%224.0%22 height=%2286.6%22 rx=%221.5%22/%3E%3Crect x=%22769.0%22 y=%2266.3%22 width=%224.0%22 height=%2287.4%22 rx=%221.5%22/%3E%3Crect x=%22775.0%22 y=%2286.6%22 width=%224.0%22 height=%2246.9%22 rx=%221.5%22/%3E%3Crect x=%22781.0%22 y=%2262.1%22 width=%224.0%22 height=%2295.9%22 rx=%221.5%22/%3E%3Crect x=%22787.0%22 y=%2277.0%22 width=%224.0%22 height=%2266.0%22 rx=%221.5%22/%3E%3Crect x=%22793.0%22 y=%2274.3%22 width=%224.0%22 height=%2271.3%22 rx=%221.5%22/%3E%3Crect x=%22799.0%22 y=%2266.3%22 width=%224.0%22 height=%2287.4%22 rx=%221.5%22/%3E%3Crect x=%22805.0%22 y=%2298.2%22 width=%224.0%22 height=%2223.5%22 rx=%221.5%22/%3E%3Crect x=%22811.0%22 y=%2283.0%22 width=%224.0%22 height=%2253.9%22 rx=%221.5%22/%3E%3Crect x=%22817.0%22 y=%2273.1%22 width=%224.0%22 height=%2273.8%22 rx=%221.5%22/%3E%3Crect x=%22823.0%22 y=%2263.8%22 width=%224.0%22 height=%2292.5%22 rx=%221.5%22/%3E%3Crect x=%22829.0%22 y=%2270.3%22 width=%224.0%22 height=%2279.4%22 rx=%221.5%22/%3E%3Crect x=%22835.0%22 y=%2276.3%22 width=%224.0%22 height=%2267.4%22 rx=%221.5%22/%3E%3Crect x=%22841.0%22 y=%2268.6%22 width=%224.0%22 height=%2282.7%22 rx=%221.5%22/%3E%3Crect x=%22847.0%22 y=%2255.6%22 width=%224.0%22 height=%22108.8%22 rx=%221.5%22/%3E%3Crect x=%22853.0%22 y=%2285.1%22 width=%224.0%22 height=%2249.7%22 rx=%221.5%22/%3E%3Crect x=%22859.0%22 y=%2277.8%22 width=%224.0%22 height=%2264.4%22 rx=%221.5%22/%3E%3Crect x=%22865.0%22 y=%2264.0%22 width=%224.0%22 height=%2292.1%22 rx=%221.5%22/%3E%3Crect x=%22871.0%22 y=%2274.5%22 width=%224.0%22 height=%2270.9%22 rx=%221.5%22/%3E%3Crect x=%22877.0%22 y=%2266.8%22 width=%224.0%22 height=%2286.3%22 rx=%221.5%22/%3E%3Crect x=%22883.0%22 y=%2269.5%22 width=%224.0%22 height=%2280.9%22 rx=%221.5%22/%3E%3Crect x=%22889.0%22 y=%2257.8%22 width=%224.0%22 height=%22104.4%22 rx=%221.5%22/%3E%3Crect x=%22895.0%22 y=%2266.0%22 width=%224.0%22 height=%2288.1%22 rx=%221.5%22/%3E%3Crect x=%22901.0%22 y=%2277.3%22 width=%224.0%22 height=%2265.3%22 rx=%221.5%22/%3E%3Crect x=%22907.0%22 y=%2271.2%22 width=%224.0%22 height=%2277.6%22 rx=%221.5%22/%3E%3Crect x=%22913.0%22 y=%2263.5%22 width=%224.0%22 height=%2293.0%22 rx=%221.5%22/%3E%3Crect x=%22919.0%22 y=%2257.8%22 width=%224.0%22 height=%22104.4%22 rx=%221.5%22/%3E%3Crect x=%22925.0%22 y=%2257.6%22 width=%224.0%22 height=%22104.9%22 rx=%221.5%22/%3E%3Crect x=%22931.0%22 y=%2278.6%22 width=%224.0%22 height=%2262.9%22 rx=%221.5%22/%3E%3Crect x=%22937.0%22 y=%2296.5%22 width=%224.0%22 height=%2227.0%22 rx=%221.5%22/%3E%3Crect x=%22943.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22949.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22955.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22961.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22967.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22973.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22979.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22985.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22991.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%22997.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221003.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221009.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221015.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221021.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221027.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221033.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221039.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221045.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221051.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221057.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221063.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221069.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221075.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221081.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221087.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221093.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221099.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221105.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221111.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221117.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221123.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221129.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221135.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221141.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221147.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221153.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221159.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221165.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221171.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221177.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221183.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221189.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221195.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221201.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221207.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221213.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221219.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221225.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221231.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221237.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221243.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221249.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221255.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221261.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221267.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221273.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221279.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221285.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221291.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221297.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221303.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221309.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3Crect x=%221315.0%22 y=%22105.8%22 width=%224.0%22 height=%228.4%22 rx=%221.5%22/%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat,no-repeat;background-position:top right,center bottom 36px;background-size:auto,100% 90px}
+
+/* ---- de-template pass: boxes out, type in */
+.panel{background:transparent;border:none;border-radius:0;padding:0;box-shadow:none}
+.panel img,.panel video{border-radius:4px;background:transparent}
+.panel figcaption{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:13px}
+.split.figs .panel,.figrow .panel,.col.media .panel,.svc-shot{padding:0}
+.tile{background:transparent;border:none;border-radius:0;padding:14px 0;border-bottom:1px solid var(--line);flex-direction:row;align-items:baseline;gap:16px}
+.tile.hl{background:transparent;border-bottom:2px solid var(--ink)}
+.tile b{font-size:44px;font-weight:700;letter-spacing:-.02em;font-family:var(--f-display);color:var(--ink);min-width:150px}
+.tile.hl b{color:var(--accent)}
+.tile.hl span{color:var(--muted)}
+.tiles.vert .tile{padding:14px 0}
+.split.dna-res .tiles.vert .tile{padding:16px 0}
+.split.dna-res .tiles.vert .tile b{font-size:44px;min-width:150px}
+#p-safe-result .tile{flex-direction:column;gap:2px}
+#p-safe-result .tile b{font-size:36px}
+.tbl-wrap,.bars{background:transparent;border:none;border-radius:0;padding:0;box-shadow:none}
+.split.dna-res .bars{padding:0}
+.bars h4,.tbl-wrap h4{font-size:15px;font-weight:700;color:var(--ink);padding-bottom:8px;border-bottom:2px solid var(--ink);margin-bottom:12px}
+.bar .track{background:#E6EAF1}
+.chip{font-family:var(--f-body);font-size:12.5px;padding:0;border-radius:0;background:transparent;color:var(--muted)}
+.chip+.chip::before{content:"";display:inline-block;width:1px;height:10px;background:var(--line);margin:0 10px;vertical-align:-1px}
+.chip.hl{background:transparent;color:var(--accent);font-weight:600}
+.chip.wip{border:none;color:var(--ink);font-weight:600}
+.pmeta{gap:0}
+.pmeta .chip{margin-right:0}
+.ucard .p-meta .chip,.repo .p-meta .chip{font-size:12px}
+.comp a.card,.card,.ucard,.repo,.award{border-radius:4px;box-shadow:none;border:1px solid var(--line);background:var(--surface)}
+.award.top{background:var(--ink);border-color:var(--ink);color:#F3F6FB}
+.award.top .y,.award.top p{color:#B5C0D6}
+.award .y{font-family:var(--f-body)}
+.repos.mini .repo{border-radius:4px}
+.phead h2{font-size:clamp(30px,3.4vw,42px);font-weight:800;letter-spacing:-.02em}
+.sec-head h2{font-size:clamp(30px,3.6vw,40px);font-weight:800;letter-spacing:-.02em}
+.phead{gap:8px}
+.pmeta{order:2;margin-top:2px}
+.phead .summary{order:3}
+.phead .head-links{order:4}
+.hero .facts{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+.slide.dark .hero .facts{border-top-color:#2E3F63}
+.kv h3,.par h4,.par3 h4,.pdl dt,.comp .tag{font-size:13px;font-weight:700;color:var(--ink)}
+.par3 div{border-top:1px solid var(--line)}
+.about h2,.contact .big{letter-spacing:-.02em}
+.next-line{display:none}
+.repos.mini .repo .name{font-family:var(--f-body);font-weight:700}
+.stat{display:none}
+.h4-sub{font-weight:500;color:var(--muted);font-size:13px;margin-left:8px}
+#p-flex-result .col.fig-only{align-self:center}
+#p-flex-result .col.fig-only .panel img{max-height:52vh;width:100%}
+#p-flex-result .col.fig-only .panel{padding:0}
+#p-flex-result .bars.one{margin-top:6px;padding:0}
+#p-flex-result .bars.one .bar{margin-bottom:3px}
+#p-flex-result .bars h4{margin-bottom:8px;padding-bottom:6px}
+#p-flex-result .tbl-wrap .cap{margin-bottom:6px}
+#p-flex-result table.res td,#p-flex-result table.res th{padding-top:5px;padding-bottom:5px}
+#p-flex-result .result-line.bottom{margin-top:10px}
+#p-flex-result .split{gap:28px}
+#p-flex-result .split{align-items:center}
 </style>
 </head>
 <body>
@@ -434,7 +495,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <div class="wrap">
 <div class="hero-grid">
 <div>
-<p class="eyebrow">이웅재, AI research &amp; engineering</p>
 <h1 style="word-break:keep-all">연구와 개발 경험을 모두 갖춘 AI 엔지니어</h1>
 <p class="lede" style="word-break:keep-all">실환경에서도 강건한 <strong>오디오 딥페이크 탐지</strong>를 연구하고, 그 모델을 <strong>서비스와 시스템</strong>으로 만들어 왔습니다. 논문 작성부터 API·Docker 기반 배포, 여러 기관의 AI 모델 통합까지 직접 수행했습니다.</p>
 <div class="cta">
@@ -447,18 +507,13 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <img alt="이웅재 프로필 사진" class="photo" src="img/photo.jpg"/>
 </div>
 
-<div class="stats">
-<div class="stat"><div class="n">8</div><div class="l">논문·학술성과</div></div>
-<div class="stat"><div class="n">4</div><div class="l">제1저자 연구</div></div>
-<div class="stat"><div class="n">2</div><div class="l">국내·미국 특허</div></div>
-<div class="stat"><div class="n">3</div><div class="l">제1저자 Oral 발표</div></div>
+<p class="facts">논문 8편, 제1저자 4편, 국내·미국 특허 2건, 제1저자 Oral 발표 3회</p>
 </div>
 </div>
 </section>
 <section class="slide" data-title="About" id="about">
 <div class="wrap">
 <div class="sec-head">
-<p class="eyebrow">About</p>
 <h2>연구실 인턴에서 해외 학회 Oral 발표까지</h2>
 <p>딥페이크 음성 탐지 연구실 인턴으로 시작해 연구원, 석사과정을 거치며 연구와 개발을 함께 해 왔습니다.</p>
 </div>
@@ -483,7 +538,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </section>
 <section class="slide" data-title="학부 프로젝트" id="p-undergrad"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Prologue, 2017–2023</p><span class="chip">2017 – 2023</span><span class="chip hl">수상 2건</span></div>
+    <div class="pmeta"><span class="chip">2017 – 2023</span><span class="chip hl">수상 2건</span></div>
     <h2>여러 분야를 거쳐 음성 AI로 <span class="psub">학부 시절의 시도들</span></h2>
     <p class="summary">로봇 모션, 영상처리, 임베디드, 적정기술까지 분야를 가리지 않고 시도했고, 졸업작품에서는 딥러닝 모델과 서버·앱을 하나의 서비스로 완성했습니다. 이 경험이 2023년 딥페이크 음성 탐지 연구실 인턴으로 이어졌습니다.</p>
   </header>
@@ -518,7 +573,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <section class="slide" data-title="Competencies" id="competencies">
 <div class="wrap">
 <div class="sec-head">
-<p class="eyebrow">Core competencies</p>
 <h2>모델 연구부터 시스템 배포까지</h2>
 </div>
 <div class="comp">
@@ -530,7 +584,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </section>
 <section class="slide" data-title="DNA Multi-LoRA" id="p-dna"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 1 of 6</p><span class="chip hl">ICASSP 2026 · 제1저자 · Oral</span><span class="chip">석사 연구</span><span class="chip">국내·미국 특허</span></div>
+    <div class="pmeta"><span class="chip hl">ICASSP 2026 · 제1저자 · Oral</span><span class="chip">석사 연구</span><span class="chip">국내·미국 특허</span></div>
     <h2>DNA Multi-LoRA <span class="psub">노이즈 인지 기반 동적 어댑터 적응 방법론</span></h2>
     <p class="summary">입력 음성의 잡음 유형을 먼저 분류하고, 그 잡음에 맞게 학습한 LoRA 어댑터만 동결된 탐지 모델에 붙여 실환경에서도 탐지 성능을 유지합니다.</p>
     <div class="links head-links"><a class="btn primary" href="https://ieeexplore.ieee.org/abstract/document/11463424" target="_blank" rel="noopener">논문 (IEEE Xplore)</a><a class="btn" href="https://github.com/woongja/DNA-Multi-LoRA" target="_blank" rel="noopener">GitHub 코드</a></div>
@@ -547,7 +601,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="DNA Multi-LoRA · 결과" id="p-dna-result"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 1 of 6, results</p></div>
+    <div class="pmeta"></div>
     <h2>DNA Multi-LoRA <span class="psub">실험 결과</span></h2>
   </header>
   <div class="split dna-res">
@@ -578,7 +632,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="FLEX" id="p-flex"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 2 of 6</p><span class="chip hl">WISA 2026 · 제1저자 · Oral</span><span class="chip">Explainable AI</span></div>
+    <div class="pmeta"><span class="chip hl">WISA 2026 · 제1저자 · Oral</span><span class="chip">Explainable AI</span></div>
     <h2>FLEX <span class="psub">프레임 단위로 딥페이크 판단 근거를 설명하는 기법</span></h2>
   </header>
   <div class="split center">
@@ -596,13 +650,13 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="FLEX · 결과" id="p-flex-result"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 2 of 6, results</p></div>
+    <div class="pmeta"></div>
     <h2>FLEX <span class="psub">실험 결과</span></h2>
   </header>
   <div class="split">
     <div class="col">
       <div class="tbl-wrap">
-        <h4>마스킹 실험 EER (%)</h4>
+        <h4>마스킹 실험 EER (%) <span class="h4-sub">마스킹 전 7.85%</span></h4>
         <p class="cap">중요한 프레임(Pos)을 가리면 성능이 빠르게 무너지고, 덜 중요한 프레임(Neg)은 가려도 성능이 유지됩니다.</p>
         <table class="res flex">
           <thead>
@@ -616,10 +670,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
             <tr><td>16 (4/12)</td><td>8.77</td><td>7.78</td><td>13.14</td><td>7.68</td><td>31.81</td><td>9.28</td></tr>
           </tbody>
         </table>
-        <p class="cap">마스킹 전 EER 7.85% · SSL-Conformer+TCM · In-the-Wild</p>
       </div>
-    </div>
-    <div class="col">
       <div class="bars one" role="img" aria-label="설명 1건당 생성 시간(ms). DeepSHAP 420.5, GradientSHAP 226.1, GATR 71.1, Grad-CAM 67.8, FLEX 27.1">
         <div><h4>설명 생성 시간 (ms)</h4>
 <div class="bar"><span class="lbl">DeepSHAP</span><span class="track"><span class="fill" style="display:block;width:100.0%"></span></span><span class="v">420.5</span></div>
@@ -629,7 +680,9 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <div class="bar ours"><span class="lbl">FLEX (Ours)</span><span class="track"><span class="fill" style="display:block;width:6.4%"></span></span><span class="v">27.1</span></div>
         </div>
       </div>
-      <figure class="panel"><img src="img/flex_example.jpg" alt="부분 위조 음성에 대한 FLEX 결과: 진짜 음성 구간에서 정렬 점수가 높고 위조 구간에서 낮음"><figcaption>예시 · 부분 위조 음성에서 진짜 음성 구간에 높은 점수가 집중</figcaption></figure>
+    </div>
+    <div class="col fig-only">
+      <figure class="panel"><img src="img/flex_example.jpg" alt="부분 위조 음성에 대한 FLEX 결과: 진짜 음성 구간에서 정렬 점수가 높고 위조 구간에서 낮음"></figure>
     </div>
   </div>
   <dl class="pdl result-line bottom"><div><dt>Result</dt><dd>중요한 구간을 정확히 식별하면서 설명 생성도 빠르기 때문에, 실환경 탐지 시스템이나 포렌식 음성 분석에서 판단 근거를 제시하는 용도로 활용할 수 있습니다.</dd></div></dl>
@@ -637,7 +690,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="SAFE" id="p-safe"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 3 of 6</p><span class="chip wip">ICASSP 2027 · 제1저자 · 심사 중</span><span class="chip">Audio Forensics</span></div>
+    <div class="pmeta"><span class="chip wip">ICASSP 2027 · 제1저자 · 심사 중</span><span class="chip">Audio Forensics</span></div>
     <h2>SAFE <span class="psub">음성이 포함된 녹음에서 녹음 환경을 분류하는 포렌식 기법</span></h2>
     <p class="summary">배경음으로 녹음 장소를 추정하는 장면 분류에서, 음성은 억제하고 장소 단서는 보존합니다.</p>
   </header>
@@ -653,7 +706,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="SAFE · 결과" id="p-safe-result"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 3 of 6, results</p></div>
+    <div class="pmeta"></div>
     <h2>SAFE <span class="psub">실험 결과</span></h2>
   </header>
   <div class="split dna-res">
@@ -691,7 +744,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <section class="slide" data-title="Publications" id="publications">
 <div class="wrap">
 <div class="sec-head">
-<p class="eyebrow">Publications</p>
 <h2>논문 및 학술 성과</h2>
 <p>전체 목록은 <a href="https://scholar.google.com/citations?user=IYl2mi0AAAAJ&amp;hl=ko" rel="noopener" target="_blank">Google Scholar</a>에서 확인할 수 있습니다.</p>
 </div>
@@ -719,7 +771,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="탐지 웹 서비스" id="p-service"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 4 of 6</p><span class="chip hl">N사 기술이전 · 약 1억 6,500만 원</span><span class="chip">방송 시연</span><span class="chip">우수성과 100선</span></div>
+    <div class="pmeta"><span class="chip hl">N사 기술이전 · 약 1억 6,500만 원</span><span class="chip">방송 시연</span><span class="chip">우수성과 100선</span></div>
     <h2>딥페이크 음성 탐지 서비스 <span class="psub">웹 서비스 개발 및 On-Premise 배포</span></h2>
   </header>
   <div class="split center">
@@ -739,7 +791,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="통합 탐지 시스템" id="p-integration"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 5 of 6</p><span class="chip hl">경찰청 R&amp;D</span><span class="chip">대학 3곳 · 기업 1곳</span><span class="chip">독일 LKA 제공</span></div>
+    <div class="pmeta"><span class="chip hl">경찰청 R&amp;D</span><span class="chip">대학 3곳 · 기업 1곳</span><span class="chip">독일 LKA 제공</span></div>
     <h2>멀티모달 통합 탐지 시스템 <span class="psub">허위조작 콘텐츠 진위 판별 시스템 개발</span></h2>
   </header>
   <div class="split center">
@@ -756,7 +808,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="ResearchOS" id="p-research-os"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 6 of 6</p><span class="chip hl">개인 프로젝트</span><span class="chip">로컬 LLM</span><span class="chip">RAG</span></div>
+    <div class="pmeta"><span class="chip hl">개인 프로젝트</span><span class="chip">로컬 LLM</span><span class="chip">RAG</span></div>
     <h2>ResearchOS <span class="psub">연구 자동화 파이프라인</span></h2>
   </header>
   <div class="split center">
@@ -788,7 +840,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <section class="slide" data-title="Awards" id="awards">
 <div class="wrap">
 <div class="sec-head">
-<p class="eyebrow">Awards and activities</p>
 <h2>수상 및 대외 활동</h2>
 </div>
 <div class="awards">
@@ -804,7 +855,6 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </section>
 <section class="slide dark" data-title="Contact" id="contact">
 <div class="wrap contact">
-<p class="eyebrow">Contact</p>
 <p class="big">함께 이야기 나누고 싶습니다.</p>
 <div class="mail"><code id="email">wcn4457@naver.com</code><button class="btn primary" id="copy" type="button">이메일 복사</button></div>
 <p aria-live="polite" class="status" id="copy-status"></p>
