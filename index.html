@@ -55,7 +55,7 @@ p{margin:0}
 /* hero */
 .hero{padding-block:72px 40px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:48px;align-items:center}
-.eyebrow{font-family:var(--f-mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.eyebrow{font-size:13px;color:var(--accent);font-weight:600}
 .hero h1{font-size:clamp(34px,5.4vw,56px);font-weight:700;letter-spacing:-.02em;margin-top:14px}
 .hero .lede{margin-top:20px;font-size:18px;color:var(--muted);max-width:60ch}
 .hero .lede strong{color:var(--ink);font-weight:600}
@@ -83,7 +83,7 @@ section.block{padding-block:72px;border-top:1px solid var(--line)}
 .about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
 @media (max-width:760px){.about-grid{grid-template-columns:1fr}}
 .kv{display:flex;flex-direction:column;gap:18px}
-.kv h3{font-size:13px;font-family:var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:4px}
+.kv h3{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:4px}
 .kv p,.kv li{color:var(--ink)}
 .kv .sub{color:var(--muted);font-size:14px}
 .kv ul{margin:0;padding-left:18px}
@@ -100,7 +100,7 @@ section.block{padding-block:72px;border-top:1px solid var(--line)}
 @media (max-width:860px){.comp{grid-template-columns:1fr}}
 .comp a.card{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink)}
 .comp a.card:hover{border-color:var(--accent);text-decoration:none}
-.comp .tag{font-family:var(--f-mono);font-size:12px;color:var(--accent);letter-spacing:.06em;text-transform:uppercase}
+.comp .tag{font-size:12px;color:var(--accent);font-weight:600}
 .comp h3{font-size:20px}
 .comp ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
 .comp .go{margin-top:auto;font-size:14px;color:var(--accent)}
@@ -116,7 +116,7 @@ section.block{padding-block:72px;border-top:1px solid var(--line)}
 .par{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 @media (max-width:860px){.par{grid-template-columns:1fr}}
 .par div{padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
-.par h4{margin:0 0 6px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.par h4{margin:0 0 6px;font-size:13px;color:var(--accent);font-weight:600}
 .par p,.par li{font-size:15px}
 .par ul{margin:0;padding-left:18px}
 figure{margin:0;display:flex;flex-direction:column;gap:8px}
@@ -263,7 +263,7 @@ body{display:flex;flex-direction:column;overflow:hidden}
 .par3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 @media (max-width:900px){.par3{grid-template-columns:1fr}}
 .par3 div{border-top:2px solid var(--accent);padding-top:12px}
-.par3 h4,.pdl dt{margin:0 0 6px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.par3 h4,.pdl dt{margin:0 0 6px;font-size:13px;color:var(--accent);font-weight:600}
 .par3 p{font-size:15px;color:var(--ink)}
 .pdl{margin:0;display:flex;flex-direction:column}
 .pdl>div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:14px 0;border-top:1px solid var(--line)}
@@ -285,7 +285,7 @@ table.res.safe th:not(:first-child),table.res.safe td:not(:first-child){text-ali
 .flow{display:flex;flex-direction:column;align-items:stretch;gap:6px;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
 .fl-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .node{display:flex;flex-direction:column;gap:2px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
-.node small{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.node small{font-size:11px;color:var(--muted)}
 .node b{font-size:15px;font-weight:600}
 .node.core{background:var(--accent);border-color:var(--accent)}
 .node.core small,.node.core b{color:var(--accent-ink)}
@@ -326,7 +326,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 .bars.one{padding:14px 18px}
 .bars.one .bar{grid-template-columns:110px minmax(0,1fr) 52px;margin-bottom:5px}
 .bars.one .note{font-size:12px}
-#p-flex-result .col:last-child .panel img{max-height:25vh}
+#p-flex-result .col:last-child .panel img{max-height:20vh}
 #p-flex-result .col:last-child .panel{padding:12px}
 .note-p{font-size:14px;color:var(--muted);line-height:1.6}
 .split.dna-res .tiles.vert .tile b{font-size:26px;min-width:160px;white-space:nowrap}
@@ -398,6 +398,27 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 .edu2{margin-top:8px}
 .next-line{margin-top:14px;font-size:14px;color:var(--muted)}
 .next-line a{font-weight:600}
+.result-line.bottom{margin-top:18px;margin-bottom:0}
+
+/* ---- motion: one orchestrated entrance on the first slide, bars grow on result pages */
+.js .slide.hero .wrap>*,.js .slide.hero .hero-grid>*{opacity:0;transform:translateY(14px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1)}
+.js .slide.hero.in .wrap>*,.js .slide.hero.in .hero-grid>*{opacity:1;transform:none}
+.js .slide.hero.in .hero-grid>*:nth-child(1){transition-delay:.1s}
+.js .slide.hero.in .hero-grid>*:nth-child(2){transition-delay:.3s}
+.js .slide.hero.in .wrap>.stats{transition-delay:.5s}
+.js .slide.hero .hero-wave{opacity:0;transition:opacity 1.2s ease .2s}
+.js .slide.hero.in .hero-wave{opacity:.2}
+.js .slide.in .bar .fill{transition:width .9s cubic-bezier(.2,.7,.2,1) .3s}
+.js .slide:not(.in) .bar .fill{width:0!important}
+.btn,.nav a.link,.controls button{transition:background .2s ease,color .2s ease}
+.hero{position:relative;overflow:hidden}
+.hero-wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:30%;opacity:.2;pointer-events:none;-webkit-mask-image:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,0));mask-image:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,0))}
+.hero .wrap{position:relative}
+@media (prefers-reduced-motion:reduce){
+  .js .slide.hero .wrap>*,.js .slide.hero .hero-grid>*,.js .slide.hero .hero-wave{opacity:1!important;transform:none!important;transition:none!important}
+  .js .slide.hero.in .hero-wave{opacity:.22!important}
+  .js .slide:not(.in) .bar .fill{width:auto!important}
+}
 </style>
 </head>
 <body>
@@ -409,10 +430,11 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </nav>
 <main aria-label="포트폴리오 슬라이드" class="deck" id="deck">
 <section class="slide hero dark" data-title="Home" id="home">
+<svg class="hero-wave" viewBox="0 0 1320 220" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g fill="#8FB0F7"><rect x="1.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="7.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="13.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="19.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="25.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="31.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="37.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="43.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="49.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="55.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="61.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="67.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="73.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="79.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="85.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="91.0" y="102.9" width="4.0" height="14.3" rx="1.5"/><rect x="97.0" y="25.0" width="4.0" height="170.1" rx="1.5"/><rect x="103.0" y="34.7" width="4.0" height="150.5" rx="1.5"/><rect x="109.0" y="39.1" width="4.0" height="141.8" rx="1.5"/><rect x="115.0" y="98.2" width="4.0" height="23.6" rx="1.5"/><rect x="121.0" y="67.0" width="4.0" height="86.0" rx="1.5"/><rect x="127.0" y="5.5" width="4.0" height="209.0" rx="1.5"/><rect x="133.0" y="32.2" width="4.0" height="155.7" rx="1.5"/><rect x="139.0" y="40.2" width="4.0" height="139.6" rx="1.5"/><rect x="145.0" y="12.3" width="4.0" height="195.4" rx="1.5"/><rect x="151.0" y="21.5" width="4.0" height="177.0" rx="1.5"/><rect x="157.0" y="71.3" width="4.0" height="77.4" rx="1.5"/><rect x="163.0" y="17.2" width="4.0" height="185.7" rx="1.5"/><rect x="169.0" y="43.2" width="4.0" height="133.6" rx="1.5"/><rect x="175.0" y="51.9" width="4.0" height="116.2" rx="1.5"/><rect x="181.0" y="31.7" width="4.0" height="156.7" rx="1.5"/><rect x="187.0" y="30.5" width="4.0" height="159.1" rx="1.5"/><rect x="193.0" y="31.0" width="4.0" height="158.1" rx="1.5"/><rect x="199.0" y="50.8" width="4.0" height="118.4" rx="1.5"/><rect x="205.0" y="74.9" width="4.0" height="70.2" rx="1.5"/><rect x="211.0" y="28.5" width="4.0" height="163.0" rx="1.5"/><rect x="217.0" y="101.8" width="4.0" height="16.4" rx="1.5"/><rect x="223.0" y="102.9" width="4.0" height="14.2" rx="1.5"/><rect x="229.0" y="89.0" width="4.0" height="41.9" rx="1.5"/><rect x="235.0" y="19.9" width="4.0" height="180.3" rx="1.5"/><rect x="241.0" y="36.8" width="4.0" height="146.4" rx="1.5"/><rect x="247.0" y="63.2" width="4.0" height="93.5" rx="1.5"/><rect x="253.0" y="76.0" width="4.0" height="68.0" rx="1.5"/><rect x="259.0" y="101.7" width="4.0" height="16.5" rx="1.5"/><rect x="265.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="271.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="277.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="283.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="289.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="295.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="301.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="307.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="313.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="319.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="325.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="331.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="337.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="343.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="349.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="355.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="361.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="367.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="373.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="379.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="385.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="391.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="397.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="403.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="409.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="415.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="421.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="427.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="433.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="439.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="445.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="451.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="457.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="463.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="469.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="475.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="481.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="487.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="493.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="499.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="505.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="511.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="517.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="523.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="529.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="535.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="541.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="547.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="553.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="559.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="565.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="571.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="577.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="583.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="589.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="595.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="601.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="607.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="613.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="619.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="625.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="631.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="637.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="643.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="649.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="655.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="661.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="667.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="673.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="679.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="685.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="691.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="697.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="703.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="709.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="715.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="721.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="727.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="733.0" y="80.5" width="4.0" height="59.0" rx="1.5"/><rect x="739.0" y="79.2" width="4.0" height="61.7" rx="1.5"/><rect x="745.0" y="62.6" width="4.0" height="94.8" rx="1.5"/><rect x="751.0" y="73.5" width="4.0" height="73.1" rx="1.5"/><rect x="757.0" y="75.5" width="4.0" height="68.9" rx="1.5"/><rect x="763.0" y="66.7" width="4.0" height="86.6" rx="1.5"/><rect x="769.0" y="66.3" width="4.0" height="87.4" rx="1.5"/><rect x="775.0" y="86.6" width="4.0" height="46.9" rx="1.5"/><rect x="781.0" y="62.1" width="4.0" height="95.9" rx="1.5"/><rect x="787.0" y="77.0" width="4.0" height="66.0" rx="1.5"/><rect x="793.0" y="74.3" width="4.0" height="71.3" rx="1.5"/><rect x="799.0" y="66.3" width="4.0" height="87.4" rx="1.5"/><rect x="805.0" y="98.2" width="4.0" height="23.5" rx="1.5"/><rect x="811.0" y="83.0" width="4.0" height="53.9" rx="1.5"/><rect x="817.0" y="73.1" width="4.0" height="73.8" rx="1.5"/><rect x="823.0" y="63.8" width="4.0" height="92.5" rx="1.5"/><rect x="829.0" y="70.3" width="4.0" height="79.4" rx="1.5"/><rect x="835.0" y="76.3" width="4.0" height="67.4" rx="1.5"/><rect x="841.0" y="68.6" width="4.0" height="82.7" rx="1.5"/><rect x="847.0" y="55.6" width="4.0" height="108.8" rx="1.5"/><rect x="853.0" y="85.1" width="4.0" height="49.7" rx="1.5"/><rect x="859.0" y="77.8" width="4.0" height="64.4" rx="1.5"/><rect x="865.0" y="64.0" width="4.0" height="92.1" rx="1.5"/><rect x="871.0" y="74.5" width="4.0" height="70.9" rx="1.5"/><rect x="877.0" y="66.8" width="4.0" height="86.3" rx="1.5"/><rect x="883.0" y="69.5" width="4.0" height="80.9" rx="1.5"/><rect x="889.0" y="57.8" width="4.0" height="104.4" rx="1.5"/><rect x="895.0" y="66.0" width="4.0" height="88.1" rx="1.5"/><rect x="901.0" y="77.3" width="4.0" height="65.3" rx="1.5"/><rect x="907.0" y="71.2" width="4.0" height="77.6" rx="1.5"/><rect x="913.0" y="63.5" width="4.0" height="93.0" rx="1.5"/><rect x="919.0" y="57.8" width="4.0" height="104.4" rx="1.5"/><rect x="925.0" y="57.6" width="4.0" height="104.9" rx="1.5"/><rect x="931.0" y="78.6" width="4.0" height="62.9" rx="1.5"/><rect x="937.0" y="96.5" width="4.0" height="27.0" rx="1.5"/><rect x="943.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="949.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="955.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="961.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="967.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="973.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="979.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="985.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="991.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="997.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1003.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1009.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1015.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1021.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1027.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1033.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1039.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1045.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1051.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1057.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1063.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1069.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1075.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1081.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1087.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1093.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1099.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1105.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1111.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1117.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1123.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1129.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1135.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1141.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1147.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1153.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1159.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1165.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1171.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1177.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1183.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1189.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1195.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1201.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1207.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1213.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1219.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1225.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1231.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1237.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1243.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1249.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1255.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1261.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1267.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1273.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1279.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1285.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1291.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1297.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1303.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1309.0" y="105.8" width="4.0" height="8.4" rx="1.5"/><rect x="1315.0" y="105.8" width="4.0" height="8.4" rx="1.5"/></g></svg>
 <div class="wrap">
 <div class="hero-grid">
 <div>
-<p class="eyebrow">AI Research &amp; Engineering · 이웅재</p>
+<p class="eyebrow">이웅재, AI research &amp; engineering</p>
 <h1 style="word-break:keep-all">연구와 개발 경험을 모두 갖춘 AI 엔지니어</h1>
 <p class="lede" style="word-break:keep-all">실환경에서도 강건한 <strong>오디오 딥페이크 탐지</strong>를 연구하고, 그 모델을 <strong>서비스와 시스템</strong>으로 만들어 왔습니다. 논문 작성부터 API·Docker 기반 배포, 여러 기관의 AI 모델 통합까지 직접 수행했습니다.</p>
 <div class="cta">
@@ -461,7 +483,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </section>
 <section class="slide" data-title="학부 프로젝트" id="p-undergrad"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Prologue · Undergraduate</p><span class="chip">2017 – 2023</span><span class="chip hl">수상 2건</span></div>
+    <div class="pmeta"><p class="eyebrow">Prologue, 2017–2023</p><span class="chip">2017 – 2023</span><span class="chip hl">수상 2건</span></div>
     <h2>여러 분야를 거쳐 음성 AI로 <span class="psub">학부 시절의 시도들</span></h2>
     <p class="summary">로봇 모션, 영상처리, 임베디드, 적정기술까지 분야를 가리지 않고 시도했고, 졸업작품에서는 딥러닝 모델과 서버·앱을 하나의 서비스로 완성했습니다. 이 경험이 2023년 딥페이크 음성 탐지 연구실 인턴으로 이어졌습니다.</p>
   </header>
@@ -496,19 +518,19 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <section class="slide" data-title="Competencies" id="competencies">
 <div class="wrap">
 <div class="sec-head">
-<p class="eyebrow">Core Competencies</p>
+<p class="eyebrow">Core competencies</p>
 <h2>모델 연구부터 시스템 배포까지</h2>
 </div>
 <div class="comp">
-<a class="card" href="#p-dna"><span class="tag">Research</span><h3>실환경 강건 탐지 연구</h3><ul><li>실환경 잡음에 따른 성능 저하 문제 정의</li><li>노이즈 인지 기반 동적 어댑터 방법론 제안</li><li>평균 EER 31.6% 감소, 학습 파라미터 약 10%</li></ul><span class="go">DNA Multi-LoRA 보기 →</span></a>
-<a class="card" href="#p-flex"><span class="tag">Research</span><h3>설명 가능한 AI 연구</h3><ul><li>Grad-CAM 탐지 결정 설명 · CISC-W 2024</li><li>FLEX 프레임 단위 설명 · WISA 2026</li><li>포렌식 모듈 종합으로 판별 근거 제시</li></ul><span class="go">FLEX 보기 →</span></a>
-<a class="card" href="#p-service"><span class="tag">Engineering</span><h3>AI 서비스 개발 및 배포</h3><ul><li>웹 서비스·추론 API로 탐지 모델 서비스화</li><li>On-Premise 패키징 · N사 기술이전</li><li>음성·영상·이미지·텍스트 통합 시스템 구축</li></ul><span class="go">서비스·통합 보기 →</span></a>
+<a class="card" href="#p-dna"><span class="tag">Research</span><h3>실환경 강건 탐지 연구</h3><ul><li>실환경 잡음에 따른 성능 저하 문제 정의</li><li>노이즈 인지 기반 동적 어댑터 방법론 제안</li><li>평균 EER 31.6% 감소, 학습 파라미터 약 10%</li></ul><span class="go">DNA Multi-LoRA 보기</span></a>
+<a class="card" href="#p-flex"><span class="tag">Research</span><h3>설명 가능한 AI 연구</h3><ul><li>Grad-CAM 탐지 결정 설명 · CISC-W 2024</li><li>FLEX 프레임 단위 설명 · WISA 2026</li><li>포렌식 모듈 종합으로 판별 근거 제시</li></ul><span class="go">FLEX 보기</span></a>
+<a class="card" href="#p-service"><span class="tag">Engineering</span><h3>AI 서비스 개발 및 배포</h3><ul><li>웹 서비스·추론 API로 탐지 모델 서비스화</li><li>On-Premise 패키징 · N사 기술이전</li><li>음성·영상·이미지·텍스트 통합 시스템 구축</li></ul><span class="go">서비스·통합 보기</span></a>
 </div>
 </div>
 </section>
 <section class="slide" data-title="DNA Multi-LoRA" id="p-dna"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 01 / 06 · Research</p><span class="chip hl">ICASSP 2026 · 제1저자 · Oral</span><span class="chip">석사 연구</span><span class="chip">국내·미국 특허</span></div>
+    <div class="pmeta"><p class="eyebrow">Project 1 of 6</p><span class="chip hl">ICASSP 2026 · 제1저자 · Oral</span><span class="chip">석사 연구</span><span class="chip">국내·미국 특허</span></div>
     <h2>DNA Multi-LoRA <span class="psub">노이즈 인지 기반 동적 어댑터 적응 방법론</span></h2>
     <p class="summary">입력 음성의 잡음 유형을 먼저 분류하고, 그 잡음에 맞게 학습한 LoRA 어댑터만 동결된 탐지 모델에 붙여 실환경에서도 탐지 성능을 유지합니다.</p>
     <div class="links head-links"><a class="btn primary" href="https://ieeexplore.ieee.org/abstract/document/11463424" target="_blank" rel="noopener">논문 (IEEE Xplore)</a><a class="btn" href="https://github.com/woongja/DNA-Multi-LoRA" target="_blank" rel="noopener">GitHub 코드</a></div>
@@ -525,10 +547,9 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="DNA Multi-LoRA · 결과" id="p-dna-result"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 01 / 06 · Result</p></div>
+    <div class="pmeta"><p class="eyebrow">Project 1 of 6, results</p></div>
     <h2>DNA Multi-LoRA <span class="psub">실험 결과</span></h2>
   </header>
-  <dl class="pdl result-line"><div><dt>Result</dt><dd>약 1/10의 학습 파라미터로 두 백본 모두 Full Fine-tuning보다 낮은 EER을 기록했고, 평균 EER을 31.6% 상대 감소했습니다. 이 결과는 석사학위논문과 국내·미국 특허로 이어졌습니다.</dd></div></dl>
   <div class="split dna-res">
     <div class="col">
       <div class="tiles vert">
@@ -552,13 +573,13 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
       </div>
     </div>
   </div>
+  <dl class="pdl result-line bottom"><div><dt>Result</dt><dd>약 1/10의 학습 파라미터로 두 백본 모두 Full Fine-tuning보다 낮은 EER을 기록했고, 평균 EER을 31.6% 상대 감소했습니다. 이 결과는 석사학위논문과 국내·미국 특허로 이어졌습니다.</dd></div></dl>
 </div></section>
 
 <section class="slide" data-title="FLEX" id="p-flex"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 02 / 06 · Research</p><span class="chip hl">WISA 2026 · 제1저자 · Oral</span><span class="chip">Explainable AI</span></div>
+    <div class="pmeta"><p class="eyebrow">Project 2 of 6</p><span class="chip hl">WISA 2026 · 제1저자 · Oral</span><span class="chip">Explainable AI</span></div>
     <h2>FLEX <span class="psub">프레임 단위로 딥페이크 판단 근거를 설명하는 기법</span></h2>
-    <p class="summary">탐지 모델을 다시 학습하지 않고, 음성의 어느 프레임이 Real 또는 Fake 판단에 가까운지를 점수로 보여 줍니다.</p>
   </header>
   <div class="split center">
     <div class="col">
@@ -575,7 +596,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="FLEX · 결과" id="p-flex-result"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 02 / 06 · Result</p></div>
+    <div class="pmeta"><p class="eyebrow">Project 2 of 6, results</p></div>
     <h2>FLEX <span class="psub">실험 결과</span></h2>
   </header>
   <div class="split">
@@ -611,11 +632,12 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
       <figure class="panel"><img src="img/flex_example.jpg" alt="부분 위조 음성에 대한 FLEX 결과: 진짜 음성 구간에서 정렬 점수가 높고 위조 구간에서 낮음"><figcaption>예시 · 부분 위조 음성에서 진짜 음성 구간에 높은 점수가 집중</figcaption></figure>
     </div>
   </div>
+  <dl class="pdl result-line bottom"><div><dt>Result</dt><dd>중요한 구간을 정확히 식별하면서 설명 생성도 빠르기 때문에, 실환경 탐지 시스템이나 포렌식 음성 분석에서 판단 근거를 제시하는 용도로 활용할 수 있습니다.</dd></div></dl>
 </div></section>
 
 <section class="slide" data-title="SAFE" id="p-safe"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 03 / 06 · Research</p><span class="chip wip">ICASSP 2027 · 제1저자 · 심사 중</span><span class="chip">Audio Forensics</span></div>
+    <div class="pmeta"><p class="eyebrow">Project 3 of 6</p><span class="chip wip">ICASSP 2027 · 제1저자 · 심사 중</span><span class="chip">Audio Forensics</span></div>
     <h2>SAFE <span class="psub">음성이 포함된 녹음에서 녹음 환경을 분류하는 포렌식 기법</span></h2>
     <p class="summary">배경음으로 녹음 장소를 추정하는 장면 분류에서, 음성은 억제하고 장소 단서는 보존합니다.</p>
   </header>
@@ -631,7 +653,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="SAFE · 결과" id="p-safe-result"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 03 / 06 · Result</p></div>
+    <div class="pmeta"><p class="eyebrow">Project 3 of 6, results</p></div>
     <h2>SAFE <span class="psub">실험 결과</span></h2>
   </header>
   <div class="split dna-res">
@@ -663,6 +685,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
       </div>
     </div>
   </div>
+  <dl class="pdl result-line bottom"><div><dt>Result</dt><dd>음성이 포함된 녹음에서도 녹음 환경을 안정적으로 추정할 수 있어, 수사용 녹음에서 장소 단서를 확보하는 포렌식 상황에 활용할 수 있습니다.</dd></div></dl>
 </div></section>
 
 <section class="slide" data-title="Publications" id="publications">
@@ -685,7 +708,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <li data-f="add xai"><span class="venue">CISC-W 2024</span><div><p class="t">Grad-CAM을 이용한 딥페이크 음성 탐지 시스템의 결정 설명</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
 <li data-f="rob"><span class="venue">한국음향학회 2025</span><div><p class="t">음성 변형 추적: 강건한 음성 처리를 위한 노이즈 분류 접근법</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">9월 특별호</span><span class="chip">강건성</span></div></div></li>
 <li data-f="add sv"><span class="venue">3D-SEC 2025</span><div><p class="t">Defending Speaker Verification Against Deepfake: A Multi-Step Approach</p><div class="badges"><span class="chip">공동저자</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
-<li data-f="add rob"><span class="venue">ICASSP 2026</span><div><p class="t"><a href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">Dynamic Noise-Aware Multi-LoRA Framework towards Real-World Audio Deepfake Detection</a></p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span><a class="chip" href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">IEEE Xplore ↗</a><a class="chip" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=ko&amp;user=IYl2mi0AAAAJ&amp;citation_for_view=IYl2mi0AAAAJ:9yKSN-GCB0IC" rel="noopener" target="_blank">Scholar ↗</a></div></div></li>
+<li data-f="add rob"><span class="venue">ICASSP 2026</span><div><p class="t">Dynamic Noise-Aware Multi-LoRA Framework towards Real-World Audio Deepfake Detection</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">강건성</span><span class="chip">딥페이크 탐지</span><a class="chip" href="https://ieeexplore.ieee.org/abstract/document/11463424" rel="noopener" target="_blank">IEEE Xplore ↗</a><a class="chip" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=ko&amp;user=IYl2mi0AAAAJ&amp;citation_for_view=IYl2mi0AAAAJ:9yKSN-GCB0IC" rel="noopener" target="_blank">Scholar ↗</a></div></div></li>
 <li data-f="add sv"><span class="venue">ICASSP 2026 WildSpoof</span><div><p class="t">Robust SASV System in Real-World Scenarios: A Fusion Approach for the WildSpoof Challenge</p><div class="badges"><span class="chip">공동저자</span><span class="chip hl">Challenge 2위</span><span class="chip">화자 인증</span><span class="chip">딥페이크 탐지</span></div></div></li>
 <li data-f="add xai"><span class="venue">WISA 2026</span><div><p class="t">FLEX: Frame-Level Explanations for Trustworthy Audio Deepfake Detection</p><div class="badges"><span class="chip hl">제1저자</span><span class="chip hl">Oral</span><span class="chip">설명가능성</span><span class="chip">딥페이크 탐지</span></div></div></li>
 <li data-f="add for"><span class="venue">3D-SEC 2026</span><div><p class="t">Explaining Suspicious Speech Beyond Binary Deepfake Detection: A Five-Module Proposition-Centered Evidence Profile</p><div class="badges"><span class="chip">공동저자</span><span class="chip">Accepted</span><span class="chip">오디오 포렌식</span><span class="chip">딥페이크 탐지</span></div></div></li>
@@ -696,7 +719,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="탐지 웹 서비스" id="p-service"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 04 / 06 · Engineering</p><span class="chip hl">N사 기술이전 · 약 1억 6,500만 원</span><span class="chip">방송 시연</span><span class="chip">우수성과 100선</span></div>
+    <div class="pmeta"><p class="eyebrow">Project 4 of 6</p><span class="chip hl">N사 기술이전 · 약 1억 6,500만 원</span><span class="chip">방송 시연</span><span class="chip">우수성과 100선</span></div>
     <h2>딥페이크 음성 탐지 서비스 <span class="psub">웹 서비스 개발 및 On-Premise 배포</span></h2>
   </header>
   <div class="split center">
@@ -716,7 +739,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="통합 탐지 시스템" id="p-integration"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 05 / 06 · Engineering</p><span class="chip hl">경찰청 R&amp;D</span><span class="chip">대학 3곳 · 기업 1곳</span><span class="chip">독일 LKA 제공</span></div>
+    <div class="pmeta"><p class="eyebrow">Project 5 of 6</p><span class="chip hl">경찰청 R&amp;D</span><span class="chip">대학 3곳 · 기업 1곳</span><span class="chip">독일 LKA 제공</span></div>
     <h2>멀티모달 통합 탐지 시스템 <span class="psub">허위조작 콘텐츠 진위 판별 시스템 개발</span></h2>
   </header>
   <div class="split center">
@@ -733,7 +756,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 
 <section class="slide" data-title="ResearchOS" id="p-research-os"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><p class="eyebrow">Project 06 / 06 · Automation</p><span class="chip hl">개인 프로젝트</span><span class="chip">로컬 LLM</span><span class="chip">RAG</span></div>
+    <div class="pmeta"><p class="eyebrow">Project 6 of 6</p><span class="chip hl">개인 프로젝트</span><span class="chip">로컬 LLM</span><span class="chip">RAG</span></div>
     <h2>ResearchOS <span class="psub">연구 자동화 파이프라인</span></h2>
   </header>
   <div class="split center">
@@ -765,7 +788,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 <section class="slide" data-title="Awards" id="awards">
 <div class="wrap">
 <div class="sec-head">
-<p class="eyebrow">Awards &amp; Activities</p>
+<p class="eyebrow">Awards and activities</p>
 <h2>수상 및 대외 활동</h2>
 </div>
 <div class="awards">
@@ -799,7 +822,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
 </div>
 <div aria-hidden="true" class="progress"><span id="pbar"></span></div>
 
-<script>
+<script>document.documentElement.classList.add('js');
 (function(){
   /* horizontal deck */
   var deck=document.getElementById('deck'),slides=[].slice.call(deck.querySelectorAll('.slide')),
@@ -814,6 +837,7 @@ table.res.flex td:first-child,table.res.flex th:first-child{text-align:left}
     cur=i;var s=slides[i];pt.textContent=s.getAttribute('data-title')||'';pn.textContent=pad(i+1)+' / '+pad(N);
     pb.style.width=((i+1)/N*100)+'%';prev.disabled=i===0;next.disabled=i===N-1;
     var proj=/^p-/.test(s.id);
+    slides.forEach(function(x,j){x.classList.toggle('in',j===i);});
     document.body.classList.toggle('on-dark',s.classList.contains('dark'));
     links.forEach(function(a){var h=a.getAttribute('href').slice(1);a.classList.toggle('on',h===s.id||(proj&&h==='p-dna'));});
   }
