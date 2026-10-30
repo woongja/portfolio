@@ -973,7 +973,7 @@ table.res:not(.safe) td:nth-child(4),table.res:not(.safe) td:nth-child(6),table.
 <div class="about-grid">
 <div class="kv">
 <div><h3>Education</h3><p>숭실대학교 전자정보공학부 IT융합학과 학사</p><p class="sub">2017.03 – 2024.02</p><p class="edu2">숭실대학교 일반대학원 정보통신공학과 석사</p><p class="sub">2024.09 – 2026.08 · 통신망보안연구실</p><p class="sub">학위논문 · 실환경 잡음에 강건성을 갖는 오디오 딥페이크 탐지 프레임워크 연구</p></div>
-<div><h3>R&amp;D Experience</h3><ul><li>경찰청 · 허위조작 콘텐츠 진위 판별 시스템 개발</li><li>과학기술정보통신부 · 딥페이크 탐지 고도화·생성 억제·유포 방지 플랫폼</li><li>과학기술정보통신부 · 위변조 음성에 강인한 화자 인증 모델</li></ul></div>
+<div><h3>R&amp;D Experience</h3><ul><li>경찰청 · 허위조작 콘텐츠 진위여부 판별 시스템 개발</li><li>과학기술정보통신부 · 딥페이크 탐지 고도화·생성 억제·유포 방지 플랫폼</li><li>과학기술정보통신부 · 위변조 음성에 강인한 화자 인증 모델</li></ul></div>
 <div><h3>Research &amp; Engineering Interests</h3><p class="irow"><span class="ilab">Research</span><span>Audio Deepfake Detection · Robust AI · Explainable AI · Audio Forensics</span></p><p class="irow"><span class="ilab">Engineering</span><span>AI Model Serving · AI System Integration · Model Deployment</span></p></div>
 <div><h3>Patents</h3><ul><li>국내 · 노이즈 적응형 딥페이크 음성 탐지 시스템 <span class="sub">(10-2025-0137328)</span></li><li>미국 · Noise-Adaptive Audio Deepfake Detection and Method <span class="sub">(19/432,349)</span></li></ul></div>
 </div>
@@ -1233,21 +1233,24 @@ table.res:not(.safe) td:nth-child(4),table.res:not(.safe) td:nth-child(6),table.
   </div>
 </div></section>
 
-<section class="slide" data-title="통합 탐지 시스템" id="p-integration"><div class="wrap pslide">
+<section class="slide" data-title="경찰청 R&amp;D" id="p-integration"><div class="wrap pslide">
   <header class="phead">
-    <div class="pmeta"><span class="chip hl">경찰청 R&amp;D</span><span class="chip">대학 3곳 · 기업 1곳</span><span class="chip">독일 LKA 제공</span></div>
-    <h2>멀티모달 통합 탐지 시스템 <span class="psub">허위조작 콘텐츠 진위 판별 시스템 개발</span></h2>
+    <div class="pmeta"><span class="chip hl">경찰청 R&amp;D · 2025.04 – 2027.12</span><span class="chip">주관 숭실대학교 산학협력단</span><span class="chip">연세대 · 성균관대 · ㈜한컴위드 참여</span></div>
+    <h2>허위조작 콘텐츠 진위여부 판별 시스템 개발 <span class="psub">사이버수사지원 기술개발 R&amp;D</span></h2>
+    <p class="summary">딥페이크 영상·딥보이스·AI 생성 뉴스 탐지와 원천 추적 기술을 고도화하고, 이를 MLOps 기반 통합 탐지 시스템으로 묶어 경찰 수사 현장에 적용하는 과제입니다. 이 중 음성 탐지와 1차 통합 시스템을 맡았습니다.</p>
   </header>
   <div class="split center">
     <div class="col">
       <dl class="pdl">
-        <div><dt>Problem</dt><dd>대학 3곳에서 개발한 탐지 모델은 기관마다 API 규격과 호출 방식이 달라 통합 과정에서 연동 문제가 반복되었습니다. 또한 기업의 On-Premise 환경으로 이전하는 과정에서 라이브러리·의존성 차이와 기관별 완료 기준 차이로 시스템 구축이 지연되었습니다.</dd></div>
-        <div><dt>Approach</dt><dd>음성 탐지 모델과 추론 API를 개발하고, 기관별 API 입출력 조건 및 변경 이력을 문서화해 공통 인터페이스를 정리했습니다. 이를 기반으로 1차 통합 시스템을 구축했으며, 이후 기업의 실행 환경과 기관별 수정 사항을 확인하고 연동 조건 및 일정을 조율했습니다.</dd></div>
-        <div><dt>Result</dt><dd>음성·영상·이미지·텍스트 탐지 기술을 하나의 시스템으로 연결하는 통합 작업에 참여했으며, 구축된 시스템은 독일 LKA에 제공되었습니다.</dd></div>
+        <div><dt>모델 고도화</dt><dd>딥보이스 탐지 모델을 실환경 잡음·압축 조건에 강건하도록 개선하고, 한국어 데이터로 성능을 검증했습니다.</dd></div>
+        <div><dt>API 개발</dt><dd>통합 시스템이 바로 호출할 수 있도록 음성 탐지 추론 API를 개발하고 Docker로 패키징해 제공했습니다.</dd></div>
+        <div><dt>통합 시스템</dt><dd>기관별 탐지 API의 입출력 조건과 변경 이력을 문서화해 공통 인터페이스로 연결하고, 영상·음성·이미지·텍스트 탐지 결과를 한 화면에서 종합하는 1차 통합 탐지 시스템을 구축·관리했습니다.</dd></div>
+        <div><dt>보고·조율</dt><dd>연차·단계 보고서와 발표자료를 작성하고, 기업의 On-Premise 이전 과정에서 기관별 수정 사항과 연동 일정을 조율했습니다.</dd></div>
       </dl>
     </div>
-    <figure class="panel col"><img src="img/integration.jpg" alt="통합 시스템 구조: 사용자 입력 → React 프론트엔드 → FastAPI 통합 서버 → 외부 기관 탐지 API와 자체 음성 탐지 모델"><figcaption>시스템 구조 · 프론트엔드, 통합 서버, 기관별 탐지 API</figcaption></figure>
+    <figure class="panel col"><img src="img/integration.jpg" alt="통합 시스템 구조: 사용자 입력 → React 프론트엔드 → FastAPI 통합 서버 → 외부 기관 탐지 API와 자체 음성 탐지 모델"><figcaption>1차 통합 탐지 시스템 구조 · 프론트엔드, 통합 서버, 기관별 탐지 API, 자체 음성 탐지 모델</figcaption></figure>
   </div>
+  <dl class="pdl result-line bottom"><div><dt>Result</dt><dd>1차 통합 탐지 시스템을 구축해 과제 데모로 운영했으며, 구축된 시스템은 독일 LKA에 제공되었습니다.</dd></div></dl>
 </div></section>
 
 <section class="slide" data-title="ResearchOS" id="p-research-os"><div class="wrap pslide">
